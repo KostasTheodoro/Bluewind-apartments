@@ -27,7 +27,7 @@ export default function Navbar() {
           {" "}
           <div className="flex items-center flex-shrink-0 pt-12">
             <Image
-              src="/images/bluewind Logo.png"
+              src="/images/Bluewind Logo.png"
               alt="Bluewind Logo"
               width={140}
               height={100}
