@@ -1,15 +1,15 @@
 export default function HeroSection() {
   return (
-    <div className="relative bg-gray-900">
+    <div className="relative bg-gray-900 ">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDEwNjF8MHwxfGFsbHwxfHx8fHx8fHwxNjIxNzMyNzM5&ixlib=rb-1.2.1&q=80&w=1080')`,
+          backgroundImage: `url('images/Balos IMG.jpg')`,
         }}
       >
         <div className="absolute inset-0 bg-gray-900 opacity-50" />
       </div>
-      <div className="relative mx-auto max-w-7xl px-4 py-32 sm:px-6 lg:px-8">
+      <div className="relative mx-auto max-w-7xl px-4 py-48 sm:px-6 lg:px-8">
         <div className="text-center">
           <h1 className="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
             Welcome to Blue Wind Apartments
@@ -19,16 +19,11 @@ export default function HeroSection() {
             premium apartments offer breathtaking views and unparalleled comfort
             for your vacation.
           </p>
-          <div className="mt-10 flex justify-center gap-4">
+          <div className="mt-16 flex justify-center gap-4">
             <a
               href="#"
-              className="inline-block rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-base font-medium text-white hover:bg-indigo-700"
-            >
-              Book Your Stay
-            </a>
-            <a
-              href="#"
-              className="inline-block rounded-md border border-indigo-600 px-5 py-3 text-base font-medium text-indigo-600 hover:bg-indigo-50"
+              className="inline-block rounded-xl border-4 border-primary bg-neutral-gray bg-opacity-50 px-5 py-3 text-xl font-extrabold text-primary 
+      hover:bg-blue-500  transition-colors duration-300 ease-in-out focus:outline-none focus:ring-4 focus:ring-blue-500"
             >
               Learn More
             </a>

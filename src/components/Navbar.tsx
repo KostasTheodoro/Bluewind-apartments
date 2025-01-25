@@ -5,13 +5,14 @@ import {
 } from "@headlessui/react";
 // import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
+import Link from "next/link";
 
 const navigation = [
-  { name: "Home", href: "#" },
-  { name: "About", href: "#" },
-  { name: "Rooms", href: "#" },
-  { name: "Explore Chania", href: "#" },
-  { name: "Contact", href: "#" },
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "Rooms", href: "/rooms" },
+  { name: "Explore Chania", href: "/explore" },
+  { name: "Contact", href: "/contact" },
 ];
 
 function classNames(...classes: string[]) {
@@ -20,10 +21,10 @@ function classNames(...classes: string[]) {
 
 export default function Navbar() {
   return (
-    <Disclosure as="nav" className="bg-white">
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <Disclosure as="nav" className="bg-white ">
+      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 ">
         {/* Navbar Container */}
-        <div className="relative flex items-center justify-between h-16 pt-16">
+        <div className="relative flex items-center justify-between h-16 pt-16 ">
           {" "}
           <div className="flex items-center flex-shrink-0 pt-12">
             <Image
@@ -41,8 +42,8 @@ export default function Navbar() {
                   key={item.name}
                   href={item.href}
                   className={classNames(
-                    "text-black  hover:text-black",
-                    "px-16 py-3 text-lg font-medium"
+                    "text-primary  hover:text-blue-500  ",
+                    "px-16 py-3 text-lg font-bold"
                   )}
                 >
                   {item.name}
@@ -56,22 +57,28 @@ export default function Navbar() {
         <div className="w-5/6 border-t-4 border-black my-4 ml-auto"></div>
 
         {/* Booking and Airbnb Links */}
-        <div className="flex justify-evenly py-4 ps-64 items-center">
+        <div className="flex justify-evenly py-4 ps-64 items-center ">
           {/* Booking Button */}
           <a
-            href="#"
-            className="flex items-center border-2 border-black
+            href="https://www.booking.com/hotel/gr/bluewind-apartments-near-the-sea"
+            target="_blank"
+            className="group flex items-center border-2 border-black 
             
-            bg-white text-black rounded-md px-4 py-4 text-xl font-medium hover:bg-indigo-400"
+            bg-white text-black rounded-xl px-4 py-4 text-xl font-medium 
+            hover:border-4 hover:border-blue-500 hover:text-primary hover:font-bold hover:bg-neutral-gray 
+            focus:outline-none focus:ring-2 focus:ring-blue-500 
+            transition-all duration-300 ease-in-out hover:scale-95 hover:transform hover:translate-x-0 hover:translate-y-0"
           >
             BOOK NOW
-            <Image
-              src="/images/Booking Logo.svg"
-              alt="booking logo"
-              width={40}
-              height={20}
-              className="ml-4"
-            />
+            <div className="transition-transform duration-500 ease-in-out group-hover:scale-75">
+              <Image
+                src="/images/Booking Logo.svg"
+                alt="booking logo"
+                width={40}
+                height={20}
+                className="ml-4 "
+              />
+            </div>
           </a>
 
           {/* Separator Line */}
@@ -81,61 +88,89 @@ export default function Navbar() {
           <div className="grid grid-cols-2 gap-4">
             <div className="flex flex-col space-y-4">
               <a
-                href="#"
-                className="flex items-center bg-white border-2 border-black text-black rounded-md px-8 py-4 text-xl font-medium hover:bg-red-400"
+                href="https://www.airbnb.gr/rooms/42484053?source_impression_id=p3_1737825240_P3C4R2jrZDklesW-"
+                target="_blank"
+                className="group flex items-center border-2 border-black 
+  bg-white text-black rounded-xl px-4 py-4 text-xl font-medium 
+  hover:border-4 hover:border-red-400 hover:text-primary hover:font-bold hover:bg-neutral-gray 
+  focus:outline-none focus:ring-2 focus:ring-red-400
+  transition-transform duration-300 ease-in-out transform hover:scale-95"
               >
                 APARTMENT A
-                <Image
-                  src="images/Airbnb Logo.svg"
-                  alt="aribnb logo"
-                  width={70}
-                  height={40}
-                  className="ml-4"
-                />
+                <div className="transition-transform duration-500 ease-in-out group-hover:scale-75">
+                  <Image
+                    src="images/Airbnb Logo.svg"
+                    alt="aribnb logo"
+                    width={70}
+                    height={40}
+                    className="ml-4"
+                  />
+                </div>
               </a>
 
               <a
-                href="#"
-                className="flex items-center bg-white border-2 border-black text-black rounded-md px-8 py-4 text-xl font-medium hover:bg-red-400"
+                href="https://www.airbnb.gr/rooms/42777596?_set_bev_on_new_domain=1621165347_ZTVkMDM5YzZlMTU3&source_impression_id=p3_1621170584_CcF%2Fa1X3vFl2ID62&guests=1&adults=1"
+                target="_blank"
+                className="group flex items-center border-2 border-black 
+  bg-white text-black rounded-xl px-4 py-4 text-xl font-medium 
+  hover:border-4 hover:border-red-400 hover:text-primary hover:font-bold hover:bg-neutral-gray 
+  focus:outline-none focus:ring-2 focus:ring-red-400
+  transition-transform duration-300 ease-in-out transform hover:scale-95"
               >
-                APARTMENT B
-                <Image
-                  src="images/Airbnb Logo.svg"
-                  alt="aribnb logo"
-                  width={70}
-                  height={40}
-                  className="ml-4"
-                />
+                APARTMENT D
+                <div className="transition-transform duration-500 ease-in-out group-hover:scale-75">
+                  <Image
+                    src="images/Airbnb Logo.svg"
+                    alt="aribnb logo"
+                    width={70}
+                    height={40}
+                    className="ml-4"
+                  />
+                </div>
               </a>
             </div>
 
             <div className="flex flex-col space-y-4">
               <a
-                href="#"
-                className="flex items-center bg-white border-2 border-black text-black rounded-md px-12 py-4 text-xl font-medium hover:bg-red-400"
+                href="https://www.airbnb.gr/rooms/42659201?source_impression_id=p3_1737825305_P39x8L5HZgonR4Kn"
+                target="_blank"
+                className="group flex items-center border-2 border-black 
+  bg-white text-black rounded-xl px-4 py-4 text-xl font-medium 
+  hover:border-4 hover:border-red-400 hover:text-primary hover:font-bold hover:bg-neutral-gray 
+  focus:outline-none focus:ring-2 focus:ring-red-400
+  transition-transform duration-300 ease-in-out transform hover:scale-95"
               >
-                STUDIO A
-                <Image
-                  src="images/Airbnb Logo.svg"
-                  alt="aribnb logo"
-                  width={70}
-                  height={40}
-                  className="ml-4"
-                />
+                <span className="flex-grow text-center">STUDIO B</span>
+                <div className="transition-transform duration-500 ease-in-out group-hover:scale-75">
+                  <Image
+                    src="images/Airbnb Logo.svg"
+                    alt="aribnb logo"
+                    width={70}
+                    height={40}
+                    className="ml-4"
+                  />
+                </div>
               </a>
 
               <a
-                href="#"
-                className="flex items-center bg-white border-2 border-black text-black rounded-md px-12 py-4 text-xl font-medium hover:bg-red-400"
+                href="https://www.airbnb.com.mt/rooms/42776701?source_impression_id=p3_1737825333_P3zpllITeIVmLpa3"
+                target="_blank"
+                className="group flex items-center border-2 border-black 
+  bg-white text-black rounded-xl px-4 py-4 text-xl font-medium 
+  hover:border-4 hover:border-red-400 hover:text-primary hover:font-bold hover:bg-neutral-gray 
+  focus:outline-none focus:ring-2 focus:ring-red-400
+  transition-transform duration-300 ease-in-out transform hover:scale-95"
               >
-                STUDIO B
-                <Image
-                  src="images/Airbnb Logo.svg"
-                  alt="aribnb logo"
-                  width={70}
-                  height={40}
-                  className="ml-4"
-                />
+                <span className="flex-grow text-center">STUDIO C</span>
+                <div className="transition-transform duration-500 ease-in-out group-hover:scale-75">
+                  <Image
+                    src="images/Airbnb Logo.svg"
+                    alt="aribnb logo"
+                    width={70}
+                    height={40}
+                    className="ml-4"
+                  />
+                </div>
               </a>
             </div>
           </div>
@@ -146,17 +181,19 @@ export default function Navbar() {
       <DisclosurePanel className="sm:hidden">
         <div className="space-y-1 px-2 pt-2 pb-3">
           {navigation.map((item) => (
-            <DisclosureButton
-              key={item.name}
-              as="a"
-              href={item.href}
-              className={classNames(
-                "text-gray-300 hover:bg-gray-700 hover:text-black",
-                "block rounded-md px-3 py-2 text-base font-medium"
-              )}
-            >
-              {item.name}
-            </DisclosureButton>
+            <Link key={item.name} href={item.href}>
+              <a>
+                <DisclosureButton
+                  as="a" // You can keep this as 'a', but now inside a Link component
+                  className={classNames(
+                    "text-gray-300 hover:bg-gray-700 hover:text-black",
+                    "block rounded-md px-3 py-2 text-base font-medium"
+                  )}
+                >
+                  {item.name}
+                </DisclosureButton>
+              </a>
+            </Link>
           ))}
         </div>
 
