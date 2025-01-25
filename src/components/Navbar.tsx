@@ -62,12 +62,9 @@ export default function Navbar() {
           <a
             href="https://www.booking.com/hotel/gr/bluewind-apartments-near-the-sea"
             target="_blank"
-            className="group flex items-center border-2 border-black 
-            
-            bg-white text-black rounded-xl px-4 py-4 text-xl font-medium 
-            hover:border-4 hover:border-blue-500 hover:text-primary hover:font-bold hover:bg-neutral-gray 
-            focus:outline-none focus:ring-2 focus:ring-blue-500 
-            transition-all duration-300 ease-in-out hover:scale-95 hover:transform hover:translate-x-0 hover:translate-y-0"
+            className="group flex items-center border-2 border-black bg-white text-black rounded-xl px-4 py-4 text-xl font-medium
+            hover:border-4 hover:border-blue-400 hover:text-black hover:font-bold hover:bg-neutral-gray hover:scale-95 hover:transition-all hover:ease-in-out
+            focus:outline-none focus:ring-0 focus:ring-blue-400 focus:ring-opacity-50 focus:ring-offset-2 transition-all duration-300 ease-in-out"
           >
             BOOK NOW
             <div className="transition-transform duration-500 ease-in-out group-hover:scale-75">
@@ -90,11 +87,9 @@ export default function Navbar() {
               <a
                 href="https://www.airbnb.gr/rooms/42484053?source_impression_id=p3_1737825240_P3C4R2jrZDklesW-"
                 target="_blank"
-                className="group flex items-center border-2 border-black 
-  bg-white text-black rounded-xl px-4 py-4 text-xl font-medium 
-  hover:border-4 hover:border-red-400 hover:text-primary hover:font-bold hover:bg-neutral-gray 
-  focus:outline-none focus:ring-2 focus:ring-red-400
-  transition-transform duration-300 ease-in-out transform hover:scale-95"
+                className="group flex items-center border-2 border-black bg-white text-black rounded-xl px-4 py-4 text-xl font-medium
+    hover:border-4 hover:border-red-400 hover:text-black hover:font-bold hover:bg-neutral-gray hover:scale-95 hover:transition-all hover:ease-in-out
+    focus:outline-none focus:ring-0 focus:ring-red-400 focus:ring-opacity-50 focus:ring-offset-2 transition-all duration-300 ease-in-out"
               >
                 APARTMENT A
                 <div className="transition-transform duration-500 ease-in-out group-hover:scale-75">
@@ -111,11 +106,9 @@ export default function Navbar() {
               <a
                 href="https://www.airbnb.gr/rooms/42777596?_set_bev_on_new_domain=1621165347_ZTVkMDM5YzZlMTU3&source_impression_id=p3_1621170584_CcF%2Fa1X3vFl2ID62&guests=1&adults=1"
                 target="_blank"
-                className="group flex items-center border-2 border-black 
-  bg-white text-black rounded-xl px-4 py-4 text-xl font-medium 
-  hover:border-4 hover:border-red-400 hover:text-primary hover:font-bold hover:bg-neutral-gray 
-  focus:outline-none focus:ring-2 focus:ring-red-400
-  transition-transform duration-300 ease-in-out transform hover:scale-95"
+                className="group flex items-center border-2 border-black bg-white text-black rounded-xl px-4 py-4 text-xl font-medium
+    hover:border-4 hover:border-red-400 hover:text-black hover:font-bold hover:bg-neutral-gray hover:scale-95 hover:transition-all hover:ease-in-out
+    focus:outline-none focus:ring-0 focus:ring-red-400 focus:ring-opacity-50 focus:ring-offset-2 transition-all duration-300 ease-in-out"
               >
                 APARTMENT D
                 <div className="transition-transform duration-500 ease-in-out group-hover:scale-75">
@@ -134,11 +127,9 @@ export default function Navbar() {
               <a
                 href="https://www.airbnb.gr/rooms/42659201?source_impression_id=p3_1737825305_P39x8L5HZgonR4Kn"
                 target="_blank"
-                className="group flex items-center border-2 border-black 
-  bg-white text-black rounded-xl px-4 py-4 text-xl font-medium 
-  hover:border-4 hover:border-red-400 hover:text-primary hover:font-bold hover:bg-neutral-gray 
-  focus:outline-none focus:ring-2 focus:ring-red-400
-  transition-transform duration-300 ease-in-out transform hover:scale-95"
+                className="group flex items-center border-2 border-black bg-white text-black rounded-xl px-4 py-4 text-xl font-medium
+    hover:border-4 hover:border-red-400 hover:text-black hover:font-bold hover:bg-neutral-gray hover:scale-95 hover:transition-all hover:ease-in-out
+    focus:outline-none focus:ring-0 focus:ring-red-400 focus:ring-opacity-50 focus:ring-offset-2 transition-all duration-300 ease-in-out"
               >
                 <span className="flex-grow text-center">STUDIO B</span>
                 <div className="transition-transform duration-500 ease-in-out group-hover:scale-75">
@@ -155,11 +146,9 @@ export default function Navbar() {
               <a
                 href="https://www.airbnb.com.mt/rooms/42776701?source_impression_id=p3_1737825333_P3zpllITeIVmLpa3"
                 target="_blank"
-                className="group flex items-center border-2 border-black 
-  bg-white text-black rounded-xl px-4 py-4 text-xl font-medium 
-  hover:border-4 hover:border-red-400 hover:text-primary hover:font-bold hover:bg-neutral-gray 
-  focus:outline-none focus:ring-2 focus:ring-red-400
-  transition-transform duration-300 ease-in-out transform hover:scale-95"
+                className="group flex items-center border-2 border-black bg-white text-black rounded-xl px-4 py-4 text-xl font-medium
+    hover:border-4 hover:border-red-400 hover:text-black hover:font-bold hover:bg-neutral-gray hover:scale-95 hover:transition-all hover:ease-in-out
+    focus:outline-none focus:ring-0 focus:ring-red-400 focus:ring-opacity-50 focus:ring-offset-2 transition-all duration-300 ease-in-out"
               >
                 <span className="flex-grow text-center">STUDIO C</span>
                 <div className="transition-transform duration-500 ease-in-out group-hover:scale-75">
