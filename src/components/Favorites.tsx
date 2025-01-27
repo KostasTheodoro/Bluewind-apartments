@@ -9,7 +9,7 @@ const Favorites = () => {
     { src: "/images/MEN_4282.jpg", alt: "Image 4" },
     { src: "/images/MEN_4239.jpg", alt: "Image 5" },
     { src: "/images/MEN_4252.jpg", alt: "Image 6" },
-  ]; // Replace these paths with your actual image paths
+  ];
 
   return (
     <section className="py-16 bg-neutral-white">
@@ -38,7 +38,7 @@ const Favorites = () => {
           ))}
         </div>
 
-        {/* Button to Rooms Page */}
+        {/* CTA Button */}
         <div className="mt-16">
           <Link
             href="/rooms"

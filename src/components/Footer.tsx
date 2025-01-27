@@ -5,10 +5,8 @@ export default function Footer() {
   return (
     <footer className="bg-primary text-white py-8">
       <div className="max-w-7xl mx-auto px-4">
-        {/* Contact Information (All in one row) */}
         <div className="flex justify-center items-center space-x-8 text-neutral-white mb-6 ">
           {" "}
-          {/* Increased space between phone, email, and facebook */}
           <div className="flex items-center space-x-2">
             <FaPhoneAlt size={20} />
             <span>+30 1234567890</span>

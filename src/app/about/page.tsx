@@ -98,14 +98,14 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* Final CTA Section with Images */}
+      {/* CTA Section with Images */}
       <section className="text-center py-16 bg-neutral-white">
         {/* Header */}
         <h2 className="text-3xl font-bold text-primary mb-4">
           Your Perfect Escape Awaits
         </h2>
 
-        {/* Images of Apartments */}
+        {/* Images of Apartments outside*/}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
           <div className="flex justify-center items-center">
             <Image
@@ -135,13 +135,10 @@ export default function AboutUs() {
             />
           </div>
         </div>
-
-        {/* Description */}
+        {/* CTA Button */}
         <p className="text-xl italic text-primary my-20">
           Book your stay today and experience the best Crete has to offer!
         </p>
-
-        {/* CTA Button */}
 
         <div className="mt-16">
           <Link

@@ -173,7 +173,7 @@ export default function Navbar() {
             <Link key={item.name} href={item.href}>
               <a>
                 <DisclosureButton
-                  as="a" // You can keep this as 'a', but now inside a Link component
+                  as="a"
                   className={classNames(
                     "text-gray-300 hover:bg-gray-700 hover:text-black",
                     "block rounded-md px-3 py-2 text-base font-medium"
