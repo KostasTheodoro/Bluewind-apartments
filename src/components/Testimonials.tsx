@@ -56,7 +56,7 @@ const Testimonials = () => {
                   src={
                     review.source === "airbnb"
                       ? "/images/Airbnb Logo.svg"
-                      : "/images/Booking logo.svg"
+                      : "/images/Booking Logo.svg"
                   }
                   alt={review.source}
                   width={40}

@@ -12,7 +12,7 @@ export default {
         primary: {
           DEFAULT: "#1D4E89", // Mediterranean Blue
           seafoam: "#54B89C", // Seafoam Green
-          coral: "#F9844A", // Sunset Coral
+          coral: "#E3A373",
         },
         neutral: {
           sandy: "#F4E4C1", // Sandy Beige

@@ -42,7 +42,7 @@ const Favorites = () => {
         <div className="mt-16">
           <Link
             href="/rooms"
-            className="inline-block bg-primary text-neutral-white border-4 border-neutral-slate  font-bold px-8 py-4 rounded-xl text-lg shadow-md hover:bg-primary-seafoam hover:shadow-lg focus:ring-1 focus:ring-neutral-slate transition-transform duration-300 transform hover:scale-95"
+            className="inline-block bg-primary text-neutral-white border-4 border-neutral-slate  font-bold px-8 py-4 rounded-xl text-lg shadow-md hover:bg-primary-coral hover:text-primary hover:font-extrabold hover:shadow-lg focus:ring-1 focus:ring-neutral-slate transition-transform duration-300 transform hover:scale-95"
           >
             OUR ROOMS
           </Link>

@@ -42,7 +42,7 @@ export default function Navbar() {
                   key={item.name}
                   href={item.href}
                   className={classNames(
-                    "text-primary  hover:text-primary-seafoam  ",
+                    "text-primary  hover:text-primary-coral  ",
                     "px-16 py-3 text-lg font-bold"
                   )}
                 >

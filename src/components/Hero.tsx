@@ -23,7 +23,7 @@ export default function HeroSection() {
             <a
               href="/about"
               className="inline-block rounded-xl border-4 border-primary bg-neutral-lightGray bg-opacity-40 px-5 py-3 text-xl font-extrabold text-primary
-              hover:bg-primary-seafoam 
+              hover:bg-primary-coral
               focus:ring-2 focus:ring-primary  focus:outline-none 
               transition-all duration-300 ease-in-out transform hover:scale-95"
             >

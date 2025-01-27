@@ -11,25 +11,25 @@ export default function Footer() {
           {/* Increased padding between links */}
           <Link
             href="/about"
-            className="text-neutral-white hover:text-primary-seafoam"
+            className="text-neutral-white  hover:text-primary-coral"
           >
             About
           </Link>
           <Link
             href="/rooms"
-            className="text-neutral-white hover:text-primary-seafoam"
+            className="text-neutral-white   hover:text-primary-coral"
           >
             Rooms
           </Link>
           <Link
             href="/explore"
-            className="text-neutral-white hover:text-primary-seafoam"
+            className="text-neutral-white   hover:text-primary-coral"
           >
             Explore
           </Link>
           <Link
             href="/contact"
-            className="text-neutral-white hover:text-primary-seafoam"
+            className="text-neutral-white   hover:text-primary-coral"
           >
             Contact
           </Link>
@@ -56,7 +56,7 @@ export default function Footer() {
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-neutral-white hover:text-primary-seafoam"
+              className="text-neutral-white hover:text-primary-coral"
             >
               <FaFacebook size={30} />
             </Link>
