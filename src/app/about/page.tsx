@@ -1,21 +1,24 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function AboutUs() {
   return (
     <div className="bg-neutral-white">
       {/* Catchy Header Section */}
-      <section className="relative bg-neutral-sandy text-center py-16">
-        <h1 className="text-5xl font-bold text-primary tracking-wide">
-          Discover Your Perfect Getaway
-        </h1>
+      <section className="relative py-16">
+        <div className="bg-primary-coral text-primary py-6 px-8 sm:px-16 mx-auto max-w-4xl rounded-3xl">
+          <h1 className="text-5xl font-bold text-center tracking-wide">
+            Discover Your Perfect Getaway
+          </h1>
+        </div>
       </section>
 
       {/* Full-Width Image */}
-      <div className="flex justify-center items-center w-full py-12">
+      <div className="flex justify-center items-center w-full py-8">
         <Image
           src="/images/Cretan Sunset Artwork.png"
           alt="Blue Wind Apartments"
-          width={800}
+          width={1000}
           height={300}
           className="items-center"
           priority
@@ -95,21 +98,59 @@ export default function AboutUs() {
         </div>
       </section>
 
-      {/* Final CTA Section */}
+      {/* Final CTA Section with Images */}
       <section className="text-center py-16 bg-neutral-white">
+        {/* Header */}
         <h2 className="text-3xl font-bold text-primary mb-4">
           Your Perfect Escape Awaits
         </h2>
-        <p className="text-lg text-neutral-slate mb-8">
-          Book your stay today and experience the best Crete has to offer.
+
+        {/* Images of Apartments */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+          <div className="flex justify-center items-center">
+            <Image
+              src="/images/arrow1jpg.jpg"
+              alt="View from Apartment"
+              width={600}
+              height={400}
+              className="object-cover rounded-lg shadow-lg"
+            />
+          </div>
+          <div className="flex justify-center items-center">
+            <Image
+              src="/images/arrow2.jpg"
+              alt="Apartment Exterior"
+              width={600}
+              height={400}
+              className="object-cover rounded-lg shadow-lg"
+            />
+          </div>
+          <div className="flex justify-center items-center">
+            <Image
+              src="/images/Bluewind Apartments Exterior Ver_2.jpg"
+              alt="Scenic View"
+              width={400}
+              height={200}
+              className="object-cover rounded-lg shadow-lg"
+            />
+          </div>
+        </div>
+
+        {/* Description */}
+        <p className="text-xl italic text-primary my-20">
+          Book your stay today and experience the best Crete has to offer!
         </p>
-        <a
-          href="/rooms"
-          className="inline-block bg-primary-seafoam text-white font-bold py-3 px-6 rounded-xl
-          hover:bg-primary transition-all duration-300 ease-in-out"
-        >
-          Explore Our Rooms
-        </a>
+
+        {/* CTA Button */}
+
+        <div className="mt-16">
+          <Link
+            href="/rooms"
+            className="inline-block bg-primary text-neutral-white border-2 border-primary  font-bold px-8 py-3 rounded-xl text-lg shadow-md hover:bg-primary-coral hover:text-primary  hover:shadow-lg focus:ring-1 focus:ring-neutral-slate transition-transform duration-300 transform hover:scale-95"
+          >
+            OUR ROOMS
+          </Link>
+        </div>
       </section>
     </div>
   );
