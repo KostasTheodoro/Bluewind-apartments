@@ -10,17 +10,19 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#0F172A", // Deep Blue
-          light: "#38BDF8", // Sky Blue
-        },
-        secondary: {
-          DEFAULT: "#A3E635", // Sage Green
-          beige: "#FEF3C7", // Warm Beige
+          DEFAULT: "#1D4E89", // Mediterranean Blue
+          seafoam: "#54B89C", // Seafoam Green
+          coral: "#F9844A", // Sunset Coral
         },
         neutral: {
-          DEFAULT: "#1E293B", // Dark Slate Gray
-          light: "#F1F5F9", // Cool Gray
-          gray: "#E5E7EB", // Light Gray
+          sandy: "#F4E4C1", // Sandy Beige
+          slate: "#2E384D", // Slate Gray
+          white: "#F9FAFB", // Off-White
+          lightGray: "#E5E7EB", // Soft Light Gray (Good for subtle hover)
+          mediumGray: "#D1D5DB", // Medium Neutral Gray (Slightly darker, still subtle)
+        },
+        secondary: {
+          olive: "#6D8B74", // Olive Green
         },
       },
     },

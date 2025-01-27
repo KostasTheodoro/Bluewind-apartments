@@ -3,28 +3,40 @@ import { FaFacebook, FaEnvelope, FaPhoneAlt } from "react-icons/fa"; // Importin
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white py-8">
+    <footer className="bg-primary text-white py-8">
       <div className="max-w-7xl mx-auto px-4">
         {/* Navigation Links */}
         <div className="mb-6 flex justify-center space-x-24 py-8">
           {" "}
           {/* Increased padding between links */}
-          <Link href="/about" className="text-gray-400 hover:text-white">
+          <Link
+            href="/about"
+            className="text-neutral-white hover:text-primary-seafoam"
+          >
             About
           </Link>
-          <Link href="/rooms" className="text-gray-400 hover:text-white">
+          <Link
+            href="/rooms"
+            className="text-neutral-white hover:text-primary-seafoam"
+          >
             Rooms
           </Link>
-          <Link href="/explore" className="text-gray-400 hover:text-white">
+          <Link
+            href="/explore"
+            className="text-neutral-white hover:text-primary-seafoam"
+          >
             Explore
           </Link>
-          <Link href="/contact" className="text-gray-400 hover:text-white">
+          <Link
+            href="/contact"
+            className="text-neutral-white hover:text-primary-seafoam"
+          >
             Contact
           </Link>
         </div>
 
         {/* Contact Information (All in one row) */}
-        <div className="flex justify-center items-center space-x-8 text-gray-400 mb-6 ">
+        <div className="flex justify-center items-center space-x-8 text-neutral-white mb-6 ">
           {" "}
           {/* Increased space between phone, email, and facebook */}
           <div className="flex items-center space-x-2">
@@ -32,19 +44,19 @@ export default function Footer() {
             <span>+30 1234567890</span>
           </div>
           {/* Vertical Separator Line */}
-          <div className="h-6 border-l-2 border-gray-400"></div>
+          <div className="h-6 border-l-2 border-neutral-white"></div>
           <div className="flex items-center space-x-2">
             <FaEnvelope size={20} />
             <span>harris@example.com</span>
           </div>
           {/* Vertical Separator Line */}
-          <div className="h-6 border-l-2 border-gray-400"></div>
+          <div className="h-6 border-l-2 border-neutral-white"></div>
           <div className="flex items-center space-x-2">
             <Link
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-400 hover:text-white "
+              className="text-neutral-white hover:text-primary-seafoam"
             >
               <FaFacebook size={30} />
             </Link>
@@ -52,7 +64,7 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="text-center text-sm text-gray-400 py-8">
+        <div className="text-center text-sm text-neutral-white py-8">
           <p>
             © {new Date().getFullYear()} Blue Wind Apartments. All rights
             reserved.

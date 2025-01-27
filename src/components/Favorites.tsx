@@ -12,10 +12,10 @@ const Favorites = () => {
   ]; // Replace these paths with your actual image paths
 
   return (
-    <section className="py-16 bg-gray-100">
+    <section className="py-16 bg-neutral-white">
       <div className="max-w-7xl mx-auto px-4 text-center">
         {/* Section Title */}
-        <h2 className="text-3xl font-bold text-gray-900">
+        <h2 className="text-3xl font-bold text-primary">
           A Glimpse of Our Spaces
         </h2>
 
@@ -39,12 +39,12 @@ const Favorites = () => {
         </div>
 
         {/* Button to Rooms Page */}
-        <div className="mt-8">
+        <div className="mt-16">
           <Link
             href="/rooms"
-            className="inline-block bg-blue-500 text-white font-bold px-6 py-3 rounded-lg text-lg shadow-md hover:bg-blue-600 hover:shadow-lg transition-transform duration-300 transform hover:scale-105"
+            className="inline-block bg-primary text-neutral-white border-4 border-neutral-slate  font-bold px-8 py-4 rounded-xl text-lg shadow-md hover:bg-primary-seafoam hover:shadow-lg focus:ring-1 focus:ring-neutral-slate transition-transform duration-300 transform hover:scale-95"
           >
-            Our Rooms
+            OUR ROOMS
           </Link>
         </div>
       </div>

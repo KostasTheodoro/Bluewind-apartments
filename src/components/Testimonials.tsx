@@ -26,13 +26,13 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-16 bg-gray-100">
+    <section className="py-16 bg-neutral-sandy">
       <div className="max-w-7xl mx-auto px-4 text-center">
         {/* Header */}
-        <h2 className="text-3xl font-bold text-gray-900">
+        <h2 className="text-3xl font-bold text-primary">
           What Our Visitors Have to Say
         </h2>
-        <p className="mt-4 text-gray-600">
+        <p className="mt-4 text-primary">
           Hear from some of our happy guests who loved their stay.
         </p>
 
@@ -44,14 +44,14 @@ const Testimonials = () => {
               className="p-6 bg-white rounded-lg shadow-md flex flex-col items-center"
             >
               {/* Review Text */}
-              <p className="italic text-gray-800 mb-4">
+              <p className="italic text-neutral-slate mb-4">
                 &quot;{review.review}&quot;
               </p>
 
               {/* Name and Source */}
               <div className="flex items-center justify-center space-x-2 mb-2">
-                <p className="text-gray-700 font-bold">{review.name}</p>
-                <span className="text-gray-400">from</span>
+                <p className="text-neutral-slate font-bold">{review.name}</p>
+                <span className="text-neutral-slate px-4">from</span>
                 <Image
                   src={
                     review.source === "airbnb"
