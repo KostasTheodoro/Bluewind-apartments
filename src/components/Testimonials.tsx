@@ -26,7 +26,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-16 bg-neutral-sandy">
+    <section className="py-16 bg-gradient-to-b from-primary-coral to-neutral-white">
       <div className="max-w-7xl mx-auto px-4 text-center">
         {/* Header */}
         <h2 className="text-3xl font-bold text-primary">
