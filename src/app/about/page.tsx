@@ -1,11 +1,8 @@
 import Image from "next/image";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
+
 export default function AboutUs() {
   return (
     <div className="bg-neutral-white">
-      <Navbar />
-
       {/* Catchy Header Section */}
       <section className="relative bg-neutral-sandy text-center py-16">
         <h1 className="text-5xl font-bold text-primary tracking-wide">
@@ -80,7 +77,7 @@ export default function AboutUs() {
               before, called Kissamos Bay. From there, you can explore the whole
               area. If you love exploration and want to witness the same
               emotions as I do every year, succumbing to the greatness of
-              nature, come and find us where the... .
+              nature, come and find us where the...
             </p>{" "}
             <div className="font-bold text-2xl pt-4 text-primary">
               Sunset meets the Sea!&quot;{" "}
@@ -114,7 +111,6 @@ export default function AboutUs() {
           Explore Our Rooms
         </a>
       </section>
-      <Footer />
     </div>
   );
 }
