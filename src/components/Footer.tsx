@@ -5,36 +5,6 @@ export default function Footer() {
   return (
     <footer className="bg-primary text-white py-8">
       <div className="max-w-7xl mx-auto px-4">
-        {/* Navigation Links */}
-        <div className="mb-6 flex justify-center space-x-24 py-8">
-          {" "}
-          {/* Increased padding between links */}
-          <Link
-            href="/about"
-            className="text-neutral-white  hover:text-primary-coral"
-          >
-            About
-          </Link>
-          <Link
-            href="/rooms"
-            className="text-neutral-white   hover:text-primary-coral"
-          >
-            Rooms
-          </Link>
-          <Link
-            href="/explore"
-            className="text-neutral-white   hover:text-primary-coral"
-          >
-            Explore
-          </Link>
-          <Link
-            href="/contact"
-            className="text-neutral-white   hover:text-primary-coral"
-          >
-            Contact
-          </Link>
-        </div>
-
         {/* Contact Information (All in one row) */}
         <div className="flex justify-center items-center space-x-8 text-neutral-white mb-6 ">
           {" "}

@@ -22,7 +22,7 @@ export default function HeroSection() {
           <div className="mt-16 flex justify-center gap-4">
             <a
               href="/about"
-              className="inline-block rounded-xl border-2 border-primary bg-neutral-lightGray bg-opacity-40 px-8 py-3 text-xl font-bold text-primary
+              className="inline-block rounded-xl hover:border-2 hover:border-primary bg-neutral-lightGray bg-opacity-40 px-8 py-3 text-xl font-bold text-primary
               hover:bg-primary-coral
               focus:ring-2 focus:ring-primary  focus:outline-none 
               transition-all duration-300 ease-in-out transform hover:scale-95"

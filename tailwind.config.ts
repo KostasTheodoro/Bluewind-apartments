@@ -15,7 +15,7 @@ export default {
           coral: "#E3A373",
         },
         neutral: {
-          sandy: "#F4E4C1", // Sandy Beige
+          sandy: "#F0C7AE", // Sandy Beige
           slate: "#2E384D", // Slate Gray
           white: "#F9FAFB", // Off-White
           lightGray: "#E5E7EB", // Soft Light Gray (Good for subtle hover)

@@ -63,8 +63,8 @@ export default function Navbar() {
             href="https://www.booking.com/hotel/gr/bluewind-apartments-near-the-sea"
             target="_blank"
             className="group flex items-center border-2 border-primary bg-neutral-white text-primary rounded-xl px-4 py-4 text-xl font-medium
-            hover:border-4   hover:font-bold hover:bg-neutral-lightGray hover:scale-95 hover:transition-all hover:ease-in-out
-            focus:outline-none focus:ring-0 focus:ring-primary focus:ring-opacity-50 focus:ring-offset-2 transition-all duration-300 ease-in-out"
+            hover:border-4   hover:font-bold hover:bg-neutral-lightGray  hover:border-primary-coral hover:scale-95 hover:transition-all hover:ease-in-out
+            focus:outline-none focus:ring-0 focus:ring-primary-coral focus:ring-opacity-50 focus:ring-offset-2 transition-all duration-300 ease-in-out"
           >
             BOOK NOW
             <div className="transition-transform duration-500 ease-in-out group-hover:scale-75">
