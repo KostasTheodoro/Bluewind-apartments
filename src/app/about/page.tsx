@@ -80,12 +80,11 @@ export default function AboutUs() {
               before, called Kissamos Bay. From there, you can explore the whole
               area. If you love exploration and want to witness the same
               emotions as I do every year, succumbing to the greatness of
-              nature, come and find us where the...{" "}
-              <div className="font-bold text-2xl pt-4 text-primary">
-                Sunset meets the Sea!&quot;{" "}
-              </div>{" "}
-              .
-            </p>
+              nature, come and find us where the... .
+            </p>{" "}
+            <div className="font-bold text-2xl pt-4 text-primary">
+              Sunset meets the Sea!&quot;{" "}
+            </div>{" "}
           </div>
           {/* Crete Image */}
           <div className="flex justify-center mt-8">
