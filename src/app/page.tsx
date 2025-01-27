@@ -3,6 +3,8 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/Hero";
 import Footer from "@/components/Footer";
+import Favorites from "@/components/Favorites";
+import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
@@ -17,6 +19,8 @@ export default function Home() {
         {" "}
         {/* Adjust pt-28 or higher if needed */}
         <HeroSection />
+        <Favorites />
+        <Testimonials />
         <Footer />
       </main>
     </div>
