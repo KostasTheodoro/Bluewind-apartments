@@ -145,7 +145,7 @@ export default function AboutUs() {
             href="/rooms"
             className="inline-block bg-primary text-neutral-white border-2 border-primary  font-bold px-8 py-3 rounded-xl text-lg shadow-md hover:bg-primary-coral hover:text-primary  hover:shadow-lg focus:ring-1 focus:ring-neutral-slate transition-transform duration-300 transform hover:scale-95"
           >
-            OUR ROOMS
+            EXPLORE OUR ROOMS
           </Link>
         </div>
       </section>
