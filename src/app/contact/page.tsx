@@ -189,7 +189,7 @@ export default function ContactUs() {
             width="50%"
             height="400"
             style={{ border: 0 }}
-            allowFullScreen=""
+            allowFullScreen={true}
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
             className="rounded-xl shadow-lg"
