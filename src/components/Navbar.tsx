@@ -11,7 +11,7 @@ const navigation = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
   { name: "Rooms", href: "/rooms" },
-  { name: "Explore Chania", href: "/explore" },
+  { name: "Landmarks", href: "/landmarks" },
   { name: "Contact", href: "/contact" },
 ];
 
