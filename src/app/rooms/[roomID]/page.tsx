@@ -1,21 +1,11 @@
+"use client";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import RoomCarousel from "@/components/Carousel";
 import { rooms } from "@/app/data/rooms";
 
-export async function generateStaticParams() {
-  return rooms.map((room) => ({
-    roomID: room.id.toString(),
-  }));
-}
-export default async function RoomPage({
-  params,
-}: {
-  params: Promise<{ roomId: string }>;
-}) {
-  const { roomId } = await params;
-
-  const room = rooms.find((r) => r.id === roomId);
+export default function RoomPage({ params }: { params: { roomId?: string } }) {
+  const room = rooms.find((r) => r.id === params.roomId);
 
   if (!room) {
     return notFound();
