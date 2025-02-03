@@ -1,11 +1,14 @@
-"use client";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import RoomCarousel from "@/components/Carousel";
 import { rooms } from "@/app/data/rooms";
 
-export default function RoomPage({ params }: { params: { roomId?: string } }) {
-  const room = rooms.find((r) => r.id === params.roomId);
+export default async function RoomPage({
+  params,
+}: {
+  params: { roomID: string };
+}) {
+  const room = rooms.find((r) => r.id === params.roomID);
 
   if (!room) {
     return notFound();
