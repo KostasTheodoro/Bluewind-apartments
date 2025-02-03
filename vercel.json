@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "app/[...page].js",
+      "use": "@vercel/static-build"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/rooms/[roomID]",
+      "headers": {
+        "Cache-Control": "s-maxage=60"
+      }
+    }
+  ]
+}
