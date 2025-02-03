@@ -3,6 +3,11 @@ import { notFound } from "next/navigation";
 import RoomCarousel from "@/components/Carousel";
 import { rooms } from "@/app/data/rooms";
 
+export async function generateStaticParams() {
+  return rooms.map((room) => ({
+    roomID: room.id.toString(),
+  }));
+}
 export default async function RoomPage({
   params,
 }: {
