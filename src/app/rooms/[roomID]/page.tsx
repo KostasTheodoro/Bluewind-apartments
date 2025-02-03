@@ -6,11 +6,14 @@ import { rooms } from "@/app/data/rooms";
 export default async function RoomPage({
   params,
 }: {
-  params: { roomId: string };
+  params: Promise<{ roomId: string }>;
 }) {
-  const room = rooms.find((r) => r.id === params.roomId);
+  const { roomId } = await params;
+
+  const room = rooms.find((r) => r.id === roomId);
+
   if (!room) {
-    notFound();
+    return notFound();
   }
   return (
     <section className="py-24 px-6 bg-neutral-white">
