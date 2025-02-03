@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import Image from "next/image";
 
@@ -18,13 +19,12 @@ export default function RoomCarousel({
 
   return (
     <div className="w-full">
-      <div className="relative w-full h-96">
+      <div className="relative w-full max-w-4xl mx-auto aspect-[16/9] sm:aspect-[4/3] md:aspect-[3/2]">
         <Image
           src={images[selectedIndex].src}
           alt={images[selectedIndex].alt || "Room Image"}
           fill
-          objectFit="cover"
-          className="rounded-xl"
+          className="rounded-xl object-contain"
         />
         <button
           onClick={handlePrev}
@@ -52,8 +52,8 @@ export default function RoomCarousel({
               src={img.src}
               alt={img.alt || "Thumbnail"}
               width={100}
-              height={60}
-              objectFit="cover"
+              height={30}
+              objectFit="contain"
               className="rounded-md"
             />
           </div>

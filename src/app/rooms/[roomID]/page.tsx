@@ -1,33 +1,42 @@
-import Image from "next/image";
 import Link from "next/link";
+import { notFound } from "next/navigation";
+import RoomCarousel from "@/components/Carousel";
+import { rooms } from "@/app/data/rooms";
 
-export default function RoomPage() {
+export default async function RoomPage({
+  params,
+}: {
+  params: { roomId: string };
+}) {
+  const room = rooms.find((r) => r.id === params.roomId);
+  if (!room) {
+    notFound();
+  }
   return (
     <section className="py-24 px-6 bg-neutral-white">
       <div className="max-w-7xl mx-auto">
+        <h1 className="text-4xl font-bold text-primary text-center mb-24">
+          {room.name}
+        </h1>
         <div className="mb-12">
-          <Image
-            src="/images/sea-view-suite-hero.jpg"
-            alt="Sea View Suite"
-            width={1200}
-            height={600}
-            className="rounded-xl shadow-lg object-cover w-full h-auto"
-            priority
-          />
+          {" "}
+          <RoomCarousel images={room.images} />
         </div>
 
         <div className="mb-12 grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="text-center">
             <h3 className="text-2xl font-bold text-primary">Size</h3>
-            <p className="mt-2 text-neutral-slate">45 m²</p>
+            <p className="mt-2 text-neutral-slate">{room.size} m²</p>
           </div>
           <div className="text-center">
             <h3 className="text-2xl font-bold text-primary">Max Occupancy</h3>
-            <p className="mt-2 text-neutral-slate">4 Guests</p>
+            <p className="mt-2 text-neutral-slate">
+              {room.maxOccupancy} Guests
+            </p>
           </div>
           <div className="text-center">
             <h3 className="text-2xl font-bold text-primary">View</h3>
-            <p className="mt-2 text-neutral-slate">Sea View</p>
+            <p className="mt-2 text-neutral-slate">{room.view}</p>
           </div>
         </div>
 
@@ -36,46 +45,14 @@ export default function RoomPage() {
             Amenities
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-6 text-center">
-            <div className="flex flex-col items-center">
-              <Image src="/icons/wifi.svg" alt="WiFi" width={40} height={40} />
-              <p className="mt-2 text-neutral-slate text-sm">WiFi</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <Image
-                src="/icons/ac.svg"
-                alt="Air Conditioning"
-                width={40}
-                height={40}
-              />
-              <p className="mt-2 text-neutral-slate text-sm">A/C</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <Image
-                src="/icons/kitchen.svg"
-                alt="Kitchenette"
-                width={40}
-                height={40}
-              />
-              <p className="mt-2 text-neutral-slate text-sm">Kitchen</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <Image
-                src="/icons/checkin.svg"
-                alt="Check In"
-                width={40}
-                height={40}
-              />
-              <p className="mt-2 text-neutral-slate text-sm">Check In: 3PM</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <Image
-                src="/icons/checkout.svg"
-                alt="Check Out"
-                width={40}
-                height={40}
-              />
-              <p className="mt-2 text-neutral-slate text-sm">Check Out: 11AM</p>
-            </div>
+            {room.amenities.map((amenity) => (
+              <div key={amenity.name} className="flex flex-col items-center">
+                <amenity.icon className="w-10 h-10 text-primary" />
+                <p className="mt-2 text-neutral-slate text-sm">
+                  {amenity.name}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
 

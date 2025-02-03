@@ -7,28 +7,28 @@ const rooms = [
     image: "/images/MEN_5228.jpg",
     description:
       "A luxurious suite with breathtaking sea views and modern amenities.",
-    link: "/rooms/Apartment_A",
+    link: "/rooms/apartment-a",
   },
   {
     name: "Apartment D",
     image: "/images/MEN_4252.jpg",
     description:
       "A cozy room surrounded by lush gardens, perfect for relaxation.",
-    link: "/rooms/Apartment_D",
+    link: "/rooms/apartment-d",
   },
   {
     name: "Studio B",
     image: "/images/MEN_5216.jpg",
     description:
       "A stylish and spacious studio ideal for couples and solo travelers.",
-    link: "/rooms/Studio_B",
+    link: "/rooms/studio-b",
   },
   {
     name: "Studio C",
     image: "/images/MEN_4273.jpg",
     description:
       "A comfortable and spacious apartment perfect for families or groups.",
-    link: "/rooms/Studio_C",
+    link: "/rooms/studio-c",
   },
 ];
 

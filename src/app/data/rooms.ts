@@ -1,3 +1,6 @@
+import { IconType } from "react-icons";
+import { FaWifi, FaRegSnowflake, FaTv } from "react-icons/fa";
+import { TbToolsKitchen2 } from "react-icons/tb";
 export interface RoomData {
   id: string;
   name: string;
@@ -6,112 +9,169 @@ export interface RoomData {
   maxOccupancy: number;
   view: string;
   images: { src: string; alt?: string }[];
-  amenities: { name: string; icon: string }[];
+  amenities: { name: string; icon: IconType }[];
   checkIn: string;
   checkOut: string;
 }
 
 export const rooms: RoomData[] = [
   {
-    id: "sea-view-suite",
-    name: "Sea View Suite",
+    id: "apartment-a",
+    name: "Apartment A",
     description:
       "A luxurious suite with breathtaking sea views, modern amenities, and a touch of Cretan charm.",
-    size: 45,
-    maxOccupancy: 4,
-    view: "Sea View",
-    images: [
-      { src: "/images/sea-view-suite-1.jpg", alt: "Sea view of the suite" },
-      { src: "/images/sea-view-suite-2.jpg", alt: "Interior of the suite" },
-      { src: "/images/sea-view-suite-3.jpg", alt: "Balcony view" },
-    ],
-    amenities: [
-      { name: "WiFi", icon: "/icons/wifi.svg" },
-      { name: "Air Conditioning", icon: "/icons/ac.svg" },
-      { name: "Kitchenette", icon: "/icons/kitchen.svg" },
-    ],
-    checkIn: "3:00 PM",
-    checkOut: "11:00 AM",
-  },
-  {
-    id: "garden-retreat",
-    name: "Garden Retreat",
-    description:
-      "A cozy room nestled among lush gardens, perfect for relaxation and a peaceful stay.",
     size: 35,
     maxOccupancy: 3,
-    view: "Garden View",
+    view: "Mountain View and Sea View",
     images: [
       {
-        src: "/images/garden-retreat-1.jpg",
+        src: "/images/MEN_5231.jpg",
         alt: "Garden view of the retreat",
       },
       {
-        src: "/images/garden-retreat-2.jpg",
+        src: "/images/MEN_5230.jpg",
         alt: "Interior with garden light",
       },
       {
-        src: "/images/garden-retreat-3.jpg",
+        src: "/images/MEN_5228.jpg",
+        alt: "Balcony overlooking the garden",
+      },
+      {
+        src: "/images/MEN_5241-HDR.jpg",
+        alt: "Balcony overlooking the garden",
+      },
+      {
+        src: "/images/MEN_5228.jpg",
+        alt: "Balcony overlooking the garden",
+      },
+      {
+        src: "/images/MPP_9878.jpg",
         alt: "Balcony overlooking the garden",
       },
     ],
     amenities: [
-      { name: "WiFi", icon: "/icons/wifi.svg" },
-      { name: "Heating", icon: "/icons/heating.svg" },
+      { name: "WiFi", icon: FaWifi },
+      { name: "Air Conditioning", icon: FaRegSnowflake },
+      { name: "Kitchen", icon: TbToolsKitchen2 },
+      { name: "TV", icon: FaTv },
     ],
-    checkIn: "3:00 PM",
+    checkIn: "01:00 PM",
     checkOut: "11:00 AM",
   },
   {
-    id: "deluxe-studio",
-    name: "Deluxe Studio",
+    id: "apartment-d",
+    name: "Apartment D",
+    description:
+      "A cozy room nestled among lush gardens, perfect for relaxation and a peaceful stay.",
+    size: 42,
+    maxOccupancy: 4,
+    view: "Mountain View and Sea View",
+    images: [
+      {
+        src: "/images/MEN_4252.jpg",
+        alt: "Garden view of the retreat",
+      },
+      {
+        src: "/images/MEN_4285.jpg",
+        alt: "Interior with garden light",
+      },
+      {
+        src: "/images/MEN_4250.jpg",
+        alt: "Balcony overlooking the garden",
+      },
+
+      {
+        src: "/images/MEN_4242.jpg",
+        alt: "Balcony overlooking the garden",
+      },
+      {
+        src: "/images/MEN_4239.jpg",
+        alt: "Balcony overlooking the garden",
+      },
+    ],
+    amenities: [
+      { name: "WiFi", icon: FaWifi },
+      { name: "Air Conditioning", icon: FaRegSnowflake },
+      { name: "Kitchen", icon: TbToolsKitchen2 },
+      { name: "TV", icon: FaTv },
+    ],
+    checkIn: "01:00 PM",
+    checkOut: "11:00 AM",
+  },
+  {
+    id: "studio-b",
+    name: "Studio B",
     description:
       "A stylish, spacious studio with contemporary design and all the comforts for a memorable stay.",
-    size: 40,
+    size: 25,
     maxOccupancy: 2,
-    view: "City & Sea View",
+    view: "Mountain View and Sea View",
     images: [
       {
-        src: "/images/deluxe-studio-1.jpg",
-        alt: "Exterior view of the studio",
+        src: "/images/MEN_5216.jpg",
+        alt: "Garden view of the retreat",
       },
-      { src: "/images/deluxe-studio-2.jpg", alt: "Interior of the studio" },
-      { src: "/images/deluxe-studio-3.jpg", alt: "Studio with a view" },
+      {
+        src: "/images/MEN_4282.jpg",
+        alt: "Interior with garden light",
+      },
+      {
+        src: "/images/MEN_4285.jpg",
+        alt: "Balcony overlooking the garden",
+      },
+
+      {
+        src: "/images/MEN_4242.jpg",
+        alt: "Balcony overlooking the garden",
+      },
+      {
+        src: "/images/MPP_9946.jpg",
+        alt: "Balcony overlooking the garden",
+      },
     ],
     amenities: [
-      { name: "WiFi", icon: "/icons/wifi.svg" },
-      { name: "Air Conditioning", icon: "/icons/ac.svg" },
-      { name: "TV", icon: "/icons/tv.svg" },
+      { name: "WiFi", icon: FaWifi },
+      { name: "Air Conditioning", icon: FaRegSnowflake },
+      { name: "Kitchen", icon: TbToolsKitchen2 },
+      { name: "TV", icon: FaTv },
     ],
-    checkIn: "3:00 PM",
+    checkIn: "01:00 PM",
     checkOut: "11:00 AM",
   },
   {
-    id: "family-apartment",
-    name: "Family Apartment",
+    id: "studio-c",
+    name: "Studio C",
     description:
       "A spacious apartment designed for families, offering comfort, privacy, and stunning views.",
-    size: 60,
-    maxOccupancy: 6,
-    view: "Panoramic Sea View",
+    size: 20,
+    maxOccupancy: 2,
+    view: "Mountain View and Sea View",
     images: [
       {
-        src: "/images/family-apartment-1.jpg",
-        alt: "Exterior view of the apartment",
+        src: "/images/MEN_4273.jpg",
+        alt: "Garden view of the retreat",
       },
       {
-        src: "/images/family-apartment-2.jpg",
-        alt: "Living area with sea view",
+        src: "/images/MEN_4277.jpg",
+        alt: "Interior with garden light",
       },
-      { src: "/images/family-apartment-3.jpg", alt: "Family room interior" },
+      {
+        src: "/images/MEN_4272.jpg",
+        alt: "Balcony overlooking the garden",
+      },
+
+      {
+        src: "/images/MPP_9932.jpg",
+        alt: "Balcony overlooking the garden",
+      },
     ],
     amenities: [
-      { name: "WiFi", icon: "/icons/wifi.svg" },
-      { name: "Air Conditioning", icon: "/icons/ac.svg" },
-      { name: "Kitchen", icon: "/icons/kitchen.svg" },
-      { name: "Multiple Bedrooms", icon: "/icons/bed.svg" },
+      { name: "WiFi", icon: FaWifi },
+      { name: "Air Conditioning", icon: FaRegSnowflake },
+      { name: "Kitchen", icon: TbToolsKitchen2 },
+      { name: "TV", icon: FaTv },
     ],
-    checkIn: "3:00 PM",
+    checkIn: "01:00 PM",
     checkOut: "11:00 AM",
   },
 ];
