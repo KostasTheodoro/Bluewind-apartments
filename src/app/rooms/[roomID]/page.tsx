@@ -3,16 +3,27 @@ import { notFound } from "next/navigation";
 import RoomCarousel from "@/components/Carousel";
 import { rooms } from "@/app/data/rooms";
 
+export async function generateStaticParams() {
+  return rooms.map((room) => ({
+    roomId: room.id,
+  }));
+}
+
 export default async function RoomPage({
   params,
 }: {
-  params: { roomID: string };
+  params: Promise<{ roomId: string }>;
 }) {
-  const room = rooms.find((r) => r.id === params.roomID);
+  const { roomId } = await params;
+
+  const decodedRoomId = decodeURIComponent(roomId);
+
+  const room = rooms.find((r) => r.id === decodedRoomId);
 
   if (!room) {
     return notFound();
   }
+
   return (
     <section className="py-24 px-6 bg-neutral-white">
       <div className="max-w-7xl mx-auto">
@@ -20,7 +31,6 @@ export default async function RoomPage({
           {room.name}
         </h1>
         <div className="mb-12">
-          {" "}
           <RoomCarousel images={room.images} />
         </div>
 
