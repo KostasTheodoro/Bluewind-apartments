@@ -5,20 +5,20 @@ import { rooms } from "@/app/data/rooms";
 
 export async function generateStaticParams() {
   console.log("Generating static paths for rooms...");
-  console.log(rooms.map((room) => ({ roomId: room.id })));
+  console.log(rooms.map((room) => ({ roomID: room.id })));
   return rooms.map((room) => ({
-    roomId: room.id,
+    roomID: room.id,
   }));
 }
 
 export default async function RoomPage({
   params,
 }: {
-  params: Promise<{ roomId: string }>;
+  params: Promise<{ roomID: string }>;
 }) {
-  const { roomId } = await params;
+  const { roomID } = await params;
 
-  const decodedRoomId = decodeURIComponent(roomId);
+  const decodedRoomId = decodeURIComponent(roomID);
 
   const room = rooms.find((r) => r.id === decodedRoomId);
 
