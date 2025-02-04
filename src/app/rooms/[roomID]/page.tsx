@@ -4,6 +4,8 @@ import RoomCarousel from "@/components/Carousel";
 import { rooms } from "@/app/data/rooms";
 
 export async function generateStaticParams() {
+  console.log("Generating static paths for rooms...");
+  console.log(rooms.map((room) => ({ roomId: room.id })));
   return rooms.map((room) => ({
     roomId: room.id,
   }));
