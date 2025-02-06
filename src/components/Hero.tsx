@@ -4,7 +4,7 @@ export default function HeroSection() {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: `url('images/Balos IMG.jpg')`,
+          backgroundImage: `url('/images/Balos IMG.jpg')`,
         }}
       >
         <div className="absolute inset-0 bg-primary opacity-40" />

@@ -103,7 +103,7 @@ export default function Navbar() {
                 APARTMENT A
                 <div className="transition-transform duration-500 ease-in-out group-hover:scale-75">
                   <Image
-                    src="images/airbnblogo.svg"
+                    src="/images/airbnblogo.svg"
                     alt="aribnb logo"
                     width={70}
                     height={40}
@@ -122,7 +122,7 @@ export default function Navbar() {
                 APARTMENT D
                 <div className="transition-transform duration-500 ease-in-out group-hover:scale-75">
                   <Image
-                    src="images/airbnblogo.svg"
+                    src="/images/airbnblogo.svg"
                     alt="aribnb logo"
                     width={70}
                     height={40}
@@ -143,7 +143,7 @@ export default function Navbar() {
                 <span className="flex-grow text-center">STUDIO B</span>
                 <div className="transition-transform duration-500 ease-in-out group-hover:scale-75">
                   <Image
-                    src="images/airbnblogo.svg"
+                    src="/images/airbnblogo.svg"
                     alt="aribnb logo"
                     width={70}
                     height={40}
@@ -162,7 +162,7 @@ export default function Navbar() {
                 <span className="flex-grow text-center">STUDIO C</span>
                 <div className="transition-transform duration-500 ease-in-out group-hover:scale-75">
                   <Image
-                    src="images/airbnblogo.svg"
+                    src="/images/airbnblogo.svg"
                     alt="aribnb logo"
                     width={70}
                     height={40}
@@ -201,11 +201,11 @@ export default function Navbar() {
             href="#"
             className="block bg-indigo-500 text-black rounded-md px-8 py-4 text-center text-xl font-medium hover:bg-indigo-400"
           >
-            <img
+            {/* <img
               src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Logo_Booking.com_2019.svg"
               alt="Booking Logo"
               className="h-6 w-6 mr-3 inline"
-            />
+            /> */}
             Book Now
           </a>
 
@@ -214,44 +214,44 @@ export default function Navbar() {
               href="#"
               className="block bg-red-500 text-black rounded-md px-8 py-4 text-center text-xl font-medium hover:bg-red-400"
             >
-              <img
+              {/* <img
                 src="https://upload.wikimedia.org/wikipedia/commons/0/06/Airbnb_Logo_2018.svg"
                 alt="Airbnb Logo"
                 className="h-6 w-6 mr-3 inline"
-              />
+              /> */}
               APARTMENT A
             </a>
             <a
               href="#"
               className="block bg-red-500 text-black rounded-md px-8 py-4 text-center text-xl font-medium hover:bg-red-400"
             >
-              <img
+              {/* <img
                 src="https://upload.wikimedia.org/wikipedia/commons/0/06/Airbnb_Logo_2018.svg"
                 alt="Airbnb Logo"
-                className="h-6 w-6 mr-3 inline"
-              />
+                className="h-6 w-6 mr-3 inline" */}
+              {/* /> */}
               APARTMENT B
             </a>
             <a
               href="#"
               className="block bg-red-500 text-black rounded-md px-8 py-4 text-center text-xl font-medium hover:bg-red-400"
             >
-              <img
+              {/* <img
                 src="https://upload.wikimedia.org/wikipedia/commons/0/06/Airbnb_Logo_2018.svg"
                 alt="Airbnb Logo"
                 className="h-6 w-6 mr-3 inline"
-              />
+              /> */}
               APARTMENT C
             </a>
             <a
               href="#"
               className="block bg-red-500 text-black rounded-md px-8 py-4 text-center text-xl font-medium hover:bg-red-400"
             >
-              <img
+              {/* <img
                 src="https://upload.wikimedia.org/wikipedia/commons/0/06/Airbnb_Logo_2018.svg"
                 alt="Airbnb Logo"
                 className="h-6 w-6 mr-3 inline"
-              />
+              /> */}
               APARTMENT D
             </a>
           </div>
