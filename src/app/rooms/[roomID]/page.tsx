@@ -3,6 +3,25 @@ import { notFound } from "next/navigation";
 import RoomCarousel from "@/components/Carousel";
 import { rooms } from "@/app/data/rooms";
 
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ roomID: string }>;
+}) {
+  const { roomID } = await params;
+  const decodedRoomId = decodeURIComponent(roomID);
+
+  const room = rooms.find((r) => r.id === decodedRoomId);
+
+  return {
+    title: room
+      ? `${room.name} | Bluewind Apts`
+      : "Room Not Found | Bluewind Apts",
+    description: room
+      ? `Details about ${room.name} at Bluewind Apartments.`
+      : "Room not found.",
+  };
+}
 export async function generateStaticParams() {
   console.log("Generating static paths for rooms...");
   console.log(rooms.map((room) => ({ roomID: room.id })));

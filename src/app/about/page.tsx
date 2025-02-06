@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-
+export const metadata = {
+  title: "About | Bluewind Apts",
+  description: "Learn more about Bluewind Apartments and our story.",
+};
 export default function AboutUs() {
   return (
     <div className="bg-neutral-white">

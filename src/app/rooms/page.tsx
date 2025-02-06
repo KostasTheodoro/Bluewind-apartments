@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-
+export const metadata = {
+  title: "Rooms | Bluewind Apts",
+  description: "Take a look to our rooms by the sea",
+};
 const rooms = [
   {
     name: "Apartment A",

@@ -1,5 +1,8 @@
 import Image from "next/image";
-
+export const metadata = {
+  title: "Landmarks | Bluewind Apts",
+  description: "View the spectacular landmarks close to our area.",
+};
 const destinations = [
   {
     name: "Chania City",

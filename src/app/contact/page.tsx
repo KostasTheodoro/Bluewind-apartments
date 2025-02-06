@@ -3,7 +3,10 @@ import {
   EnvelopeIcon,
   PhoneIcon,
 } from "@heroicons/react/24/outline";
-
+export const metadata = {
+  title: "Contact Us | Bluewind Apts",
+  description: "Contact Us for anything regarding our rooms",
+};
 export default function ContactUs() {
   return (
     <div className="bg-neutral-white">
