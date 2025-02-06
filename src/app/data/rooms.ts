@@ -1,6 +1,8 @@
 import { IconType } from "react-icons";
-import { FaWifi, FaRegSnowflake, FaTv } from "react-icons/fa";
-import { TbToolsKitchen2 } from "react-icons/tb";
+import { FaWifi, FaRegSnowflake, FaTv, FaCar, FaCoffee } from "react-icons/fa";
+import { TbToolsKitchen2, TbIroningSteam } from "react-icons/tb";
+import { GiWashingMachine } from "react-icons/gi";
+import { MdBalcony } from "react-icons/md";
 export interface RoomData {
   id: string;
   name: string;
@@ -8,7 +10,7 @@ export interface RoomData {
   size: number;
   maxOccupancy: number;
   view: string;
-  images: { src: string; alt?: string }[];
+  images: { src: string; alt: string }[];
   amenities: { name: string; icon: IconType }[];
   checkIn: string;
   checkOut: string;
@@ -19,7 +21,7 @@ export const rooms: RoomData[] = [
     id: "apartment-a",
     name: "Apartment A",
     description:
-      "A luxurious suite with breathtaking sea views, modern amenities, and a touch of Cretan charm.",
+      "A bright and inviting apartment with stunning views, perfect for a peaceful escape in Crete.",
     size: 35,
     maxOccupancy: 3,
     view: "Mountain View and Sea View",
@@ -54,6 +56,11 @@ export const rooms: RoomData[] = [
       { name: "Air Conditioning", icon: FaRegSnowflake },
       { name: "Kitchen", icon: TbToolsKitchen2 },
       { name: "TV", icon: FaTv },
+      { name: "Washing Machine", icon: GiWashingMachine },
+      { name: "Steam Iron", icon: TbIroningSteam },
+      { name: "Free parking on the road", icon: FaCar },
+      { name: "Coffee machine", icon: FaCoffee },
+      { name: "Balcony", icon: MdBalcony },
     ],
     checkIn: "01:00 PM",
     checkOut: "11:00 AM",
@@ -62,7 +69,7 @@ export const rooms: RoomData[] = [
     id: "apartment-d",
     name: "Apartment D",
     description:
-      "A cozy room nestled among lush gardens, perfect for relaxation and a peaceful stay.",
+      "A comfortable and scenic home base in Kissamos, ideal for unwinding after a day of adventure.",
     size: 42,
     maxOccupancy: 4,
     view: "Mountain View and Sea View",
@@ -94,6 +101,11 @@ export const rooms: RoomData[] = [
       { name: "Air Conditioning", icon: FaRegSnowflake },
       { name: "Kitchen", icon: TbToolsKitchen2 },
       { name: "TV", icon: FaTv },
+      { name: "Washing Machine", icon: GiWashingMachine },
+      { name: "Steam Iron", icon: TbIroningSteam },
+      { name: "Free parking on the road", icon: FaCar },
+      { name: "Coffee machine", icon: FaCoffee },
+      { name: "Balcony", icon: MdBalcony },
     ],
     checkIn: "01:00 PM",
     checkOut: "11:00 AM",
@@ -102,7 +114,7 @@ export const rooms: RoomData[] = [
     id: "studio-b",
     name: "Studio B",
     description:
-      "A stylish, spacious studio with contemporary design and all the comforts for a memorable stay.",
+      "A charming, sunlit studio, perfect for couples looking for a relaxing island retreat.",
     size: 25,
     maxOccupancy: 2,
     view: "Mountain View and Sea View",
@@ -134,6 +146,11 @@ export const rooms: RoomData[] = [
       { name: "Air Conditioning", icon: FaRegSnowflake },
       { name: "Kitchen", icon: TbToolsKitchen2 },
       { name: "TV", icon: FaTv },
+      { name: "Washing Machine", icon: GiWashingMachine },
+      { name: "Steam Iron", icon: TbIroningSteam },
+      { name: "Free parking on the road", icon: FaCar },
+      { name: "Coffee machine", icon: FaCoffee },
+      { name: "Balcony", icon: MdBalcony },
     ],
     checkIn: "01:00 PM",
     checkOut: "11:00 AM",
@@ -142,7 +159,7 @@ export const rooms: RoomData[] = [
     id: "studio-c",
     name: "Studio C",
     description:
-      "A spacious apartment designed for families, offering comfort, privacy, and stunning views.",
+      "A simple yet comfortable retreat, perfect for a quiet stay near Crete's best beaches.",
     size: 20,
     maxOccupancy: 2,
     view: "Mountain View and Sea View",
@@ -170,6 +187,11 @@ export const rooms: RoomData[] = [
       { name: "Air Conditioning", icon: FaRegSnowflake },
       { name: "Kitchen", icon: TbToolsKitchen2 },
       { name: "TV", icon: FaTv },
+      { name: "Washing Machine", icon: GiWashingMachine },
+      { name: "Steam Iron", icon: TbIroningSteam },
+      { name: "Free parking on the road", icon: FaCar },
+      { name: "Coffee machine", icon: FaCoffee },
+      { name: "Balcony", icon: MdBalcony },
     ],
     checkIn: "01:00 PM",
     checkOut: "11:00 AM",
