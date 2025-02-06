@@ -6,7 +6,8 @@ import {
 // import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
-
+import { FaAirbnb } from "react-icons/fa";
+import { TbBrandBooking } from "react-icons/tb";
 const navigation = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
@@ -94,7 +95,7 @@ export default function Navbar() {
                 APARTMENT A
                 <div className="transition-transform duration-500 ease-in-out group-hover:scale-75">
                   <Image
-                    src="images/Airbnb Logo.svg"
+                    src="images/airbnblogo.svg"
                     alt="aribnb logo"
                     width={70}
                     height={40}
@@ -113,7 +114,7 @@ export default function Navbar() {
                 APARTMENT D
                 <div className="transition-transform duration-500 ease-in-out group-hover:scale-75">
                   <Image
-                    src="images/Airbnb Logo.svg"
+                    src="images/airbnblogo.svg"
                     alt="aribnb logo"
                     width={70}
                     height={40}
@@ -134,7 +135,7 @@ export default function Navbar() {
                 <span className="flex-grow text-center">STUDIO B</span>
                 <div className="transition-transform duration-500 ease-in-out group-hover:scale-75">
                   <Image
-                    src="images/Airbnb Logo.svg"
+                    src="images/airbnblogo.svg"
                     alt="aribnb logo"
                     width={70}
                     height={40}
@@ -153,7 +154,7 @@ export default function Navbar() {
                 <span className="flex-grow text-center">STUDIO C</span>
                 <div className="transition-transform duration-500 ease-in-out group-hover:scale-75">
                   <Image
-                    src="images/Airbnb Logo.svg"
+                    src="images/airbnblogo.svg"
                     alt="aribnb logo"
                     width={70}
                     height={40}
