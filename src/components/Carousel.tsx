@@ -19,22 +19,27 @@ export default function RoomCarousel({
 
   return (
     <div className="w-full">
-      <div className="relative w-full max-w-4xl mx-auto aspect-[16/9] sm:aspect-[4/3] md:aspect-[3/2]">
-        <Image
-          src={images[selectedIndex].src}
-          alt={images[selectedIndex].alt || "Room Image"}
-          fill
-          className="rounded-xl object-contain"
-        />
+      <div className="relative w-full max-w-4xl mx-auto aspect-[16/9] sm:aspect-[4/3] md:aspect-[3/2] overflow-hidden">
+        {images.map((img, index) => (
+          <Image
+            key={index}
+            src={img.src}
+            alt={img.alt || "Room Image"}
+            fill
+            className={`rounded-xl object-contain absolute inset-0 transition-opacity duration-700 ease-in-out ${
+              selectedIndex === index ? "opacity-100" : "opacity-0"
+            }`}
+          />
+        ))}
         <button
           onClick={handlePrev}
-          className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/70 p-2 rounded-full hover:bg-white"
+          className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/70 p-2 rounded-full hover:bg-white transition-all"
         >
           &lt;
         </button>
         <button
           onClick={handleNext}
-          className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/70 p-2 rounded-full hover:bg-white"
+          className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/70 p-2 rounded-full hover:bg-white transition-all"
         >
           &gt;
         </button>
@@ -44,7 +49,7 @@ export default function RoomCarousel({
           <div
             key={index}
             onClick={() => setSelectedIndex(index)}
-            className={`cursor-pointer border-2 rounded-md overflow-hidden ${
+            className={`cursor-pointer border-2 rounded-md overflow-hidden transition-all ${
               selectedIndex === index ? "border-primary" : "border-transparent"
             }`}
           >

@@ -69,7 +69,7 @@ export default function Rooms() {
               <p className="mt-4 text-neutral-slate px-4">{room.description}</p>
               <Link
                 href={room.link}
-                className="mt-6 inline-block bg-primary text-neutral-white px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-primary-coral transition-transform transform hover:scale-95"
+                className="m-8 inline-block bg-primary text-neutral-white border-2 border-primary font-bold px-8 py-3 rounded-xl text-lg shadow-md hover:bg-primary-coral hover:text-primary hover:shadow-lg focus:ring-1 focus:ring-neutral-slate transition-transform duration-300 transform hover:scale-95"
               >
                 More Info
               </Link>
