@@ -1,9 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+
 export const metadata = {
   title: "Rooms | Bluewind Apts",
   description: "Take a look to our rooms by the sea",
 };
+
 const rooms = [
   {
     name: "Apartment A",
@@ -34,6 +36,12 @@ const rooms = [
     link: "/rooms/studio-c",
   },
 ];
+
+export async function generateStaticParams() {
+  return rooms.map((room) => ({
+    roomID: room.name.toLowerCase().replace(" ", "-"),
+  }));
+}
 
 export default function Rooms() {
   return (

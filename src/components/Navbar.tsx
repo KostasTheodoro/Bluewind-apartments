@@ -1,3 +1,4 @@
+"use client";
 import {
   Disclosure,
   DisclosureButton,
@@ -6,8 +7,10 @@ import {
 // import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
-import { FaAirbnb } from "react-icons/fa";
-import { TbBrandBooking } from "react-icons/tb";
+import { usePathname } from "next/navigation";
+
+// import { FaAirbnb } from "react-icons/fa";
+// import { TbBrandBooking } from "react-icons/tb";
 const navigation = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
@@ -21,8 +24,12 @@ function classNames(...classes: string[]) {
 }
 
 export default function Navbar() {
+  const pathname = usePathname();
   return (
-    <Disclosure as="nav" className="bg-neutral-white ">
+    <Disclosure
+      as="nav"
+      className="bg-neutral-white  border-b-2 border-neutral-lightGray"
+    >
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 ">
         {/* Navbar Container */}
         <div className="relative flex items-center justify-between h-16 pt-16 ">
@@ -39,16 +46,17 @@ export default function Navbar() {
           <div className="flex  items-center justify-center sm:items-stretch sm:justify-start">
             <div className="hidden sm:flex space-x-4">
               {navigation.map((item) => (
-                <a
+                <Link
                   key={item.name}
                   href={item.href}
                   className={classNames(
-                    "text-primary  hover:text-primary-coral  ",
-                    "px-16 py-3 text-lg font-bold"
+                    "text-primary hover:text-primary-coral",
+                    "px-16 py-3 text-lg font-bold",
+                    pathname === item.href ? "text-primary-coral" : ""
                   )}
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
