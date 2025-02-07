@@ -55,7 +55,7 @@ export default function ContactUs() {
                       className="hover:text-primary text-neutral-slate"
                       href="tel:+301234567890"
                     >
-                      +30 1234567890
+                      +30 6945226609
                     </a>
                   </dd>
                 </div>
@@ -72,7 +72,7 @@ export default function ContactUs() {
                       className="hover:text-primary text-neutral-slate"
                       href="mailto:harris@example.com"
                     >
-                      harris@example.com
+                      bluewindapts@gmail.com
                     </a>
                   </dd>
                 </div>
