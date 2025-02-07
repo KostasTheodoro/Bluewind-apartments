@@ -7,14 +7,14 @@ export default function HeroSection() {
           backgroundImage: `url('/images/Balos IMG.jpg')`,
         }}
       >
-        <div className="absolute inset-0 bg-primary opacity-40" />
+        <div className="absolute inset-0 bg-primary opacity-50" />
       </div>
       <div className="relative mx-auto max-w-7xl px-4 py-48 sm:px-6 lg:px-8">
         <div className="text-center">
-          <h1 className="text-4xl font-bold tracking-tight text-neutral-white sm:text-5xl lg:text-6xl">
-            Welcome to Blue Wind Apartments
+          <h1 className="text-5xl font-bold tracking-tight text-neutral-white sm:text-5xl lg:text-6xl">
+            Welcome to Bluewind Apartments
           </h1>
-          <p className="mt-6 max-w-3xl text-xl text-neutral-sandy mx-auto">
+          <p className="mt-6 max-w-3xl text-2xl text-neutral-white mx-auto">
             Discover a tranquil escape on the beautiful island of Crete. Our
             premium apartments offer breathtaking views and unparalleled comfort
             for your vacation.

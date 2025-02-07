@@ -4,29 +4,30 @@ import Image from "next/image";
 const Testimonials = () => {
   const reviews = [
     {
-      name: "John Doe",
+      name: "Milica",
       review:
-        "The apartment was clean, cozy, and perfectly located. Will definitely return!",
+        "Everything was perfect. The host was so nice, he met us on time and gave us tips about the place and beaches.The location is so good for reaching local beaches and the popular ones such as Falassarna, Elafonissi, etc.Kissamos is a small city but has everything you need. We have made an excellent decision to stay here instead of Chania or Rethimno which are so crowded and difficult to find parking space.The apartment has everything you need, it is very roomy, there are two big balconies and lots of space for parking.",
+      source: "booking",
+      rating: 5,
+    },
+    {
+      name: "Piotr",
+      review:
+        "We came back to the same apartment that we had pleasure to stay in a few years ago, to be greeted with the same level of quality and cosiness again. The apartment was clean and had all the amenities we needed during our stay (including an iron and ironing board, provided by Giannis on our special request). It is a perfect choice if you plan to spend your vacation in Kissamos and explore the beauty of the western Crete - if you prefer to feel more like at home rather than at a hotel.Big thanks to Giannis for being so friendly, helpful, responsive and creating an opportunity to meet in person.I highly recommend the Bluewind Apartments in Kissamos.",
       source: "airbnb",
       rating: 5,
     },
     {
-      name: "Jane Smith",
+      name: "Bogdan",
       review:
-        "Amazing experience! The view was breathtaking, and the service was outstanding.",
-      source: "booking",
-      rating: 4,
-    },
-    {
-      name: "Emily Brown",
-      review: "Absolutely loved the stay. Everything exceeded my expectations!",
+        "Bluewind is a great place to stay. Is near a great beach and a few local restaurants.The whole area is great for starting trips to Balos beach and Elafonissi beach.I really recomand this place for people that want a more relaxing experience.",
       source: "airbnb",
       rating: 5,
     },
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-b from-primary-coral to-neutral-white">
+    <section className="py-16 bg-neutral-sandy">
       <div className="max-w-7xl mx-auto px-4 text-center">
         {/* Header */}
         <h2 className="text-3xl font-bold text-primary">
@@ -55,7 +56,7 @@ const Testimonials = () => {
                 <Image
                   src={
                     review.source === "airbnb"
-                      ? "/images/Airbnb Logo.svg"
+                      ? "/images/airbnblogo.svg"
                       : "/images/Booking Logo.svg"
                   }
                   alt={review.source}

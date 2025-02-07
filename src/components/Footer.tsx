@@ -1,5 +1,10 @@
 import Link from "next/link";
-import { FaFacebook, FaEnvelope, FaPhoneAlt } from "react-icons/fa"; // Importing social and icon components
+import {
+  FaFacebook,
+  FaInstagram,
+  FaEnvelope,
+  FaPhoneAlt,
+} from "react-icons/fa"; // Importing social and icon components
 
 export default function Footer() {
   return (
@@ -9,19 +14,18 @@ export default function Footer() {
           {" "}
           <div className="flex items-center space-x-2">
             <FaPhoneAlt size={20} />
-            <span>+30 1234567890</span>
+            <span>+30 6945226609</span>
           </div>
           {/* Vertical Separator Line */}
           <div className="h-6 border-l-2 border-neutral-white"></div>
           <div className="flex items-center space-x-2">
             <FaEnvelope size={20} />
-            <span>harris@example.com</span>
+            <span>bluewindapts@gmail.com</span>
           </div>
-          {/* Vertical Separator Line */}
           <div className="h-6 border-l-2 border-neutral-white"></div>
           <div className="flex items-center space-x-2">
             <Link
-              href="https://facebook.com"
+              href="https://www.facebook.com/Bluewindapts/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-neutral-white hover:text-primary-coral"
@@ -29,12 +33,23 @@ export default function Footer() {
               <FaFacebook size={30} />
             </Link>
           </div>
+          <div className="h-6 border-l-2 border-neutral-white"></div>
+          <div className="flex items-center space-x-2">
+            <Link
+              href="https://www.instagram.com/bluewindapts/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-neutral-white hover:text-primary-coral"
+            >
+              <FaInstagram size={30} />
+            </Link>
+          </div>
         </div>
 
         {/* Copyright */}
-        <div className="text-center text-sm text-neutral-white py-8">
+        <div className="text-center text-sm text-neutral-white ">
           <p>
-            © {new Date().getFullYear()} Blue Wind Apartments. All rights
+            © {new Date().getFullYear()} Bluewind Apartments. All rights
             reserved.
           </p>
         </div>

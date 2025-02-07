@@ -47,9 +47,9 @@ export default function Landmarks() {
   return (
     <section className=" bg-neutral-white">
       <div>
-        <h2 className="text-4xl font-bold text-center text-primary mb-12 pt-24">
+        <h1 className="text-5xl font-bold text-primary text-center tracking-wide py-24 px-8">
           Crete&apos;s Hidden Gems
-        </h2>
+        </h1>
 
         {/* Top Image */}
         <div className="w-full mb-12 mx-auto max-w-5xl ">

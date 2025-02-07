@@ -7,16 +7,14 @@ export const metadata = {
 export default function AboutUs() {
   return (
     <div className="bg-neutral-white">
-      {/* Catchy Header Section */}
       <section className="relative py-16">
-        <div className="bg-primary-coral text-primary py-6 px-8 sm:px-16 mx-auto max-w-4xl rounded-3xl">
+        <div className="text-primary py-6 px-8 sm:px-16 mx-auto max-w-4xl rounded-3xl">
           <h1 className="text-5xl font-bold text-center tracking-wide">
             Discover Your Perfect Getaway
           </h1>
         </div>
       </section>
 
-      {/* Full-Width Image */}
       <div className="flex justify-center items-center w-full py-8">
         <Image
           src="/images/Cretan Sunset Artwork.png"
