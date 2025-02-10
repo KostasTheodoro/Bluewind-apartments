@@ -20,6 +20,7 @@ export default {
           white: "#F9FAFB", // Off-White
           lightGray: "#E5E7EB", // Soft Light Gray (Good for subtle hover)
           mediumGray: "#D1D5DB", // Medium Neutral Gray (Slightly darker, still subtle)
+          darkGray: "#9CA3AF", // Darker Gray (Adds more contrast)
         },
         secondary: {
           olive: "#6D8B74", // Olive Green

@@ -20,7 +20,6 @@ export async function POST(req: Request) {
       },
     });
 
-    // Email content
     const mailOptions = {
       from: email,
       to: "kostakisthegreat@gmail.com", // The company email

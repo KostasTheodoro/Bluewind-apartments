@@ -67,7 +67,7 @@ export default function ContactForm() {
     } catch (error) {
       console.error("Error submitting contact form:", error);
       setStatus({
-        message: "Network error. Try again later.",
+        message: "Missing required fields.",
         icon: <FaCircleXmark className="text-red-500 text-3xl" />,
       });
     }
@@ -82,7 +82,7 @@ export default function ContactForm() {
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
           <div>
             <label className="block text-sm font-semibold leading-6 text-primary">
-              First name
+              First name<span className="text-red-500 px-2 text-lg">*</span>
             </label>
             <input
               type="text"
@@ -96,7 +96,7 @@ export default function ContactForm() {
           </div>
           <div>
             <label className="block text-sm font-semibold leading-6 text-primary">
-              Last name
+              Last name <span className="text-red-500 px-2 text-lg">*</span>
             </label>
             <input
               type="text"
@@ -110,7 +110,7 @@ export default function ContactForm() {
           </div>
           <div className="sm:col-span-2">
             <label className="block text-sm font-semibold leading-6 text-primary">
-              Email
+              Email <span className="text-red-500 px-2 text-lg">*</span>
             </label>
             <input
               type="email"
@@ -124,7 +124,10 @@ export default function ContactForm() {
           </div>
           <div className="sm:col-span-2">
             <label className="block text-sm font-semibold leading-6 text-primary">
-              Phone number
+              Phone number{" "}
+              <span className="text-primary italic text-neutral-darkGray">
+                (optional)
+              </span>
             </label>
             <input
               type="tel"
@@ -139,7 +142,7 @@ export default function ContactForm() {
           </div>
           <div className="sm:col-span-2">
             <label className="block text-sm font-semibold leading-6 text-primary">
-              Message
+              Message <span className="text-red-500 px-2 text-lg">*</span>
             </label>
             <textarea
               name="message"
