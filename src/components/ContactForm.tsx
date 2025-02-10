@@ -19,7 +19,16 @@ export default function ContactForm() {
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+
+    if (name === "phone") {
+      setFormData({
+        ...formData,
+        [name]: value.replace(/[^0-9]/g, ""),
+      });
+    } else {
+      setFormData({ ...formData, [name]: value });
+    }
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -122,6 +131,7 @@ export default function ContactForm() {
               name="phone"
               value={formData.phone}
               onChange={handleChange}
+              inputMode="numeric"
               className="block w-full rounded-md border-0 px-3.5 py-2 text-neutral-slate shadow-sm 
               ring-1 ring-inset ring-primary placeholder:text-neutral-slate focus:ring-2 focus:ring-inset 
               focus:ring-primary focus:outline-none sm:text-sm sm:leading-6"
