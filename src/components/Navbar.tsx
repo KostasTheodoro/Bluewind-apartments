@@ -35,7 +35,7 @@ export default function Navbar() {
             {/* Navbar Container */}
             <div className="relative flex items-center justify-between lg:h-16 lg:pt-16">
               {/* Logo */}
-              <div className="flex items-center flex-shrink-0 lg:pt-12 p-4 ">
+              <div className="flex items-center flex-shrink-0 lg:pt-12 lg:w-1/6 ml-auto w-1/2 p-4">
                 <Image
                   src="/images/Bluewind Logo.png"
                   alt="Bluewind Logo"
