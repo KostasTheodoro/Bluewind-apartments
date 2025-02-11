@@ -67,13 +67,13 @@ export default function Landmarks() {
         </div>
 
         {/* Grid Layout */}
-        <div className=" p-24 mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-36">
+        <div className=" lg:p-8 mx-auto grid grid-cols-1  lg:grid-cols-2 gap-36">
           {destinations.map((destination) => (
             <div
               key={destination.name}
-              className="flex flex-col sm:flex-row gap-6 items-center"
+              className="flex flex-col sm:flex-row gap-2 items-center"
             >
-              <div className="relative w-1/2 h-96 ">
+              <div className="relative w-full h-96 lg:w-1/2">
                 <Image
                   src={destination.image}
                   alt={destination.name}

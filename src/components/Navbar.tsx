@@ -221,16 +221,14 @@ export default function Navbar() {
               {/* Mobile Navigation Links */}
               <div className="space-y-1 px-2 pt-2 pb-3">
                 {navigation.map((item) => (
-                  <Link
+                  <DisclosureButton
+                    as={Link}
                     key={item.name}
                     href={item.href}
-                    onClick={() =>
-                      document.getElementById("mobile-close")?.click()
-                    }
                     className="block rounded-md px-3 py-2 text-base font-medium text-primary hover:text-primary-coral"
                   >
                     {item.name}
-                  </Link>
+                  </DisclosureButton>
                 ))}
               </div>
             </DisclosurePanel>
