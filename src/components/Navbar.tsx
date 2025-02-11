@@ -29,7 +29,7 @@ export default function Navbar() {
   return (
     <Disclosure
       as="nav"
-      className="bg-neutral-white border-b-2 border-neutral-lightGray"
+      className="bg-neutral-white border-b-2 border-neutral-lightGray lg:static sticky top-0 z-50"
     >
       {({ open }) => (
         <>
