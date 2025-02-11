@@ -35,7 +35,7 @@ export default function Navbar() {
             {/* Navbar Container */}
             <div className="relative flex items-center justify-between lg:h-16 lg:pt-16">
               {/* Logo */}
-              <div className="flex items-center flex-shrink-0 lg:pt-12 lg:w-1/6 ml-auto w-1/2 p-4">
+              <div className="flex items-center flex-shrink-0 lg:pt-12 lg:w-1/6 lg:ml-auto p-4 order-last lg:order-first">
                 <Image
                   src="/images/Bluewind Logo.png"
                   alt="Bluewind Logo"
@@ -62,7 +62,7 @@ export default function Navbar() {
                 </div>
               </div>
               {/* Mobile Toggle Button */}
-              <div className="lg:hidden">
+              <div className="lg:hidden order-first">
                 <DisclosureButton className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
@@ -181,7 +181,7 @@ export default function Navbar() {
             </div>
           </div>
           {/* Mobile Navigation Panel */}
-          <DisclosurePanel className="md:hidden ">
+          <DisclosurePanel className="lg:hidden ">
             <div className="space-y-1 px-2 pt-2 pb-3">
               {navigation.map((item) => (
                 <DisclosureButton
