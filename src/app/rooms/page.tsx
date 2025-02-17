@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { rooms } from "@/app/data/rooms";
+import ExternalLinks from "@/components/ExternalLinks";
 
 export const metadata = {
   title: "Rooms | Bluewind Apts",
@@ -17,9 +18,12 @@ export default function Rooms() {
   return (
     <section className="py-24 px-6 bg-neutral-white">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-5xl text-primary font-bold text-center tracking-wide px-8 mb-24">
+        <h1 className="text-5xl text-primary font-bold text-center tracking-wide px-8 lg:mb-24">
           Our Rooms
         </h1>
+        <div className=" flex lg:hidden justify-center">
+          <ExternalLinks />
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-36">
           {rooms.map((room) => (
             <div
