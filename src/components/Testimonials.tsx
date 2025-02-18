@@ -21,9 +21,9 @@ const Testimonials = () => {
       rating: 5,
     },
     {
-      name: "Piotr",
+      name: "Uros",
       reviewText:
-        "We came back to the same apartment that we had pleasure to stay in a few years ago, to be greeted with the same level of quality and cosiness again. The apartment was clean and had all the amenities we needed during our stay (including an iron and ironing board, provided by Giannis on our special request). It is a perfect choice if you plan to spend your vacation in Kissamos and explore the beauty of the western Crete - if you prefer to feel more like at home rather than at a hotel. Big thanks to Giannis for being so friendly, helpful, responsive and creating an opportunity to meet in person. I highly recommend the Bluewind Apartments in Kissamos.",
+        "Location is just perfect for anyone that wants to check out all the cool stuff in the west. The host will help you with everything and you'll have a beach that is a minute walk from where you are staying. The apartment is very cozy and clean and each one has its private balcony. Would recommend it to everyone coming to Kissamos!",
       source: "airbnb",
       rating: 5,
     },
