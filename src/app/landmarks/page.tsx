@@ -1,7 +1,26 @@
 import Image from "next/image";
-export const metadata = {
-  title: "Landmarks | Bluewind Apts",
-  description: "View the spectacular landmarks close to our area.",
+import Link from "next/link";
+import type { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Top Landmarks Near Kissamos | Explore Crete with Bluewind Apartments",
+  description:
+    "Discover the most beautiful landmarks near Bluewind Apartments in Kissamos. From Balos Lagoon and Falassarna Beach to the historic Chania Old Town.",
+  openGraph: {
+    title:
+      "Top Landmarks Near Kissamos | Explore Crete with Bluewind Apartments",
+    description:
+      "Plan your Crete adventure with our guide to the top local attractions — from Elafonisi to Samaria Gorge, all easily reachable from Bluewind Apartments.",
+    url: "https://www.bluewindapts.com/landmarks",
+    siteName: "Bluewind Apartments",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Top Landmarks in West Crete | Bluewind Apartments",
+    description:
+      "Explore famous Cretan landmarks just a short trip from your stay. Ideal for day trips and nature lovers staying in Kissamos.",
+  },
 };
 const destinations = [
   {
@@ -55,13 +74,21 @@ export default function Landmarks() {
         <div className="w-full mb-12 mx-auto max-w-5xl px-4">
           <Image
             src="/images/Crete Historical Map.png"
-            alt="Map of Crete"
+            alt="Illustrated map showing historical landmarks across Crete"
             width={1000}
             height={500}
             className="rounded-xl object-contain w-full h-auto"
             priority
           />
         </div>
+        <p className="text-center max-w-4xl mx-auto text-lg text-neutral-slate mt-12 mb-12 px-4 leading-relaxed">
+          Staying in Kissamos gives you the perfect base to explore western
+          Crete’s most iconic landmarks. From the famous{" "}
+          <strong>Balos Lagoon</strong> and <strong>Falassarna Beach</strong> to
+          the historic <strong>Chania Old Town</strong> and the pink sands of{" "}
+          <strong>Elafonisi</strong>, these must-see destinations are all within
+          reach of Bluewind Apartments.
+        </p>
 
         {/* Responsive Grid */}
         <div className="mx-auto max-w-[1600px] px-4 grid grid-cols-1 lg:grid-cols-2 gap-x-[10vw] gap-y-32">
@@ -79,7 +106,7 @@ export default function Landmarks() {
               <div className="relative w-full h-72 sm:h-96 mb-6 rounded-xl overflow-hidden shadow-lg">
                 <Image
                   src={destination.image}
-                  alt={destination.name}
+                  alt={`Photo of ${destination.name} in Crete`}
                   fill
                   className="object-cover"
                 />
@@ -96,6 +123,14 @@ export default function Landmarks() {
             </div>
           ))}
         </div>
+      </div>
+      <div className="mt-24 text-center">
+        <Link
+          href="/rooms"
+          className="inline-block bg-primary text-neutral-white border-2 border-primary font-bold px-8 py-3 rounded-xl text-lg shadow-md hover:bg-primary-coral hover:text-primary hover:shadow-lg focus:ring-1 focus:ring-neutral-slate transition-transform duration-300 transform hover:scale-95"
+        >
+          Stay Near These Landmarks
+        </Link>
       </div>
     </section>
   );
