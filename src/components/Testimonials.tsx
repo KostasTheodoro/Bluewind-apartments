@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import { FaStar } from "react-icons/fa";
 import Image from "next/image";
@@ -24,6 +25,7 @@ const Testimonials = () => {
       name: "Uros",
       reviewText:
         "Location is just perfect for anyone that wants to check out all the cool stuff in the west. The host will help you with everything and you'll have a beach that is a minute walk from where you are staying. The apartment is very cozy and clean and each one has its private balcony. Would recommend it to everyone coming to Kissamos!",
+
       source: "airbnb",
       rating: 5,
     },

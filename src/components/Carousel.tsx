@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-
+import { ChevronLeft, ChevronRight } from "lucide-react";
 export default function RoomCarousel({
   images,
 }: {
@@ -33,15 +33,15 @@ export default function RoomCarousel({
         ))}
         <button
           onClick={handlePrev}
-          className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/70 p-2 rounded-full hover:bg-white transition-all"
+          className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-white/70 p-2 rounded-full hover:bg-white transition-all text-gray-800"
         >
-          &lt;
+          <ChevronLeft className="w-5 h-5" />
         </button>
         <button
           onClick={handleNext}
-          className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/70 p-2 rounded-full hover:bg-white transition-all"
+          className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-white/70 p-2 rounded-full hover:bg-white transition-all text-gray-700"
         >
-          &gt;
+          <ChevronRight className="w-5 h-5" />
         </button>
       </div>
       <div className="mt-4 flex justify-center gap-4">

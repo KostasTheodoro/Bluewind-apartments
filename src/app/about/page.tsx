@@ -1,5 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
+import arrow1 from "@/assets/images/about/arrow1jpg.jpg";
+import arrow2 from "@/assets/images/about/arrow2.jpg";
+import exterior from "@/assets/images/about/Exterior.jpg";
+import artwork from "@/assets/images/about/Artwork.png";
+import aboutImage from "@/assets/images/about/about-image.jpg";
 export const metadata = {
   title: "About | Bluewind Apts",
   description: "Learn more about Bluewind Apartments and our story.",
@@ -17,7 +22,7 @@ export default function AboutUs() {
 
       <div className="flex justify-center items-center w-full py-8">
         <Image
-          src="/images/Cretan Sunset Artwork.png"
+          src={artwork}
           alt="Blue Wind Apartments"
           width={1000}
           height={300}
@@ -31,8 +36,9 @@ export default function AboutUs() {
         {/* Left Image */}
         <div className="relative">
           <Image
-            src="/images/Summer BG_2.jpg"
+            src={aboutImage}
             alt="Beautiful Crete"
+            placeholder="blur"
             fill
             className="object-cover h-full w-full"
           />
@@ -110,8 +116,9 @@ export default function AboutUs() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
           <div className="flex justify-center items-center">
             <Image
-              src="/images/arrow1jpg.jpg"
+              src={arrow1}
               alt="View from Apartment"
+              placeholder="blur"
               width={600}
               height={400}
               className="object-cover rounded-lg shadow-lg"
@@ -119,8 +126,9 @@ export default function AboutUs() {
           </div>
           <div className="flex justify-center items-center">
             <Image
-              src="/images/arrow2.jpg"
+              src={arrow2}
               alt="Apartment Exterior"
+              placeholder="blur"
               width={600}
               height={400}
               className="object-cover rounded-lg shadow-lg"
@@ -128,8 +136,9 @@ export default function AboutUs() {
           </div>
           <div className="flex justify-center items-center">
             <Image
-              src="/images/Bluewind Apartments Exterior Ver_2.jpg"
-              alt="Scenic View"
+              src={exterior}
+              alt="Apartment Exterior"
+              placeholder="blur"
               width={400}
               height={200}
               className="object-cover rounded-lg shadow-lg"

@@ -1,11 +1,28 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { rooms } from "@/app/data/rooms";
 import ExternalLinks from "@/components/ExternalLinks";
 
-export const metadata = {
-  title: "Rooms | Bluewind Apts",
-  description: "Take a look to our rooms by the sea",
+export const metadata: Metadata = {
+  title: "Rooms in Kissamos | Bluewind Apartments Crete",
+  description:
+    "Discover our modern seaside apartments in Kissamos, Crete. Each room offers comfort, style, and easy access to Falassarna, Elafonisi, and Balos.",
+  openGraph: {
+    title: "Rooms in Kissamos | Bluewind Apartments Crete",
+    description:
+      "Explore the rooms at Bluewind Apartments. Located in Kissamos near Crete’s top beaches — Falassarna, Elafonisi, and Balos.",
+    url: "https://www.bluewindapts.com/rooms",
+    siteName: "Bluewind Apartments",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Rooms at Bluewind Apartments, Crete",
+    description:
+      "Stay by the sea in Kissamos. Choose from a variety of fully equipped apartments near Crete’s west coast gems.",
+  },
 };
 
 export async function generateStaticParams() {
@@ -19,7 +36,7 @@ export default function Rooms() {
     <section className="py-24 px-6 bg-neutral-white">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-5xl text-primary font-bold text-center tracking-wide px-8 lg:mb-24">
-          Our Rooms
+          Seaside Apartments in Kissamos Crete
         </h1>
         <div className=" flex lg:hidden justify-center">
           <ExternalLinks />

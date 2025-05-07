@@ -1,22 +1,16 @@
 import Link from "next/link";
 import Image from "next/image";
-import {
-  favorites1,
-  favorites2,
-  favorites3,
-  favorites4,
-  favorites5,
-  favorites6,
-} from "@/assets/images/favorites/indext";
+
 const Favorites = () => {
   const favoriteImages = [
-    { src: favorites1, alt: "Image 1" },
-    { src: favorites2, alt: "Image 2" },
-    { src: favorites3, alt: "Image 3" },
-    { src: favorites4, alt: "Image 4" },
-    { src: favorites5, alt: "Image 5" },
-    { src: favorites6, alt: "Image 6" },
+    { src: "/images/MEN_5223-HDR.jpg", alt: "Image 1" },
+    { src: "/images/MEN_5241-HDR.jpg", alt: "Image 2" },
+    { src: "/images/MEN_5216.jpg", alt: "Image 3" },
+    { src: "/images/MEN_4282.jpg", alt: "Image 4" },
+    { src: "/images/MEN_4239.jpg", alt: "Image 5" },
+    { src: "/images/MEN_4252.jpg", alt: "Image 6" },
   ];
+
   return (
     <section className="py-16 bg-neutral-white">
       <div className="max-w-7xl mx-auto px-4 text-center">
@@ -35,7 +29,6 @@ const Favorites = () => {
               <Image
                 src={image.src}
                 alt={image.alt}
-                placeholder="blur"
                 width={400}
                 height={300}
                 className="w-full h-64 object-cover"

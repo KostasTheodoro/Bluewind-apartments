@@ -1,4 +1,5 @@
 "use client";
+
 import { Fragment } from "react";
 import {
   Disclosure,
@@ -32,27 +33,23 @@ export default function Navbar() {
       as="nav"
       className="bg-neutral-white border-b-2 border-neutral-lightGray lg:static sticky top-0 z-50"
     >
-      {({ open }) => (
+      {({ open, close }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-            {/* Navbar Container */}
             <div className="relative flex items-center justify-between lg:h-16 lg:pt-16">
               {/* Mobile Toggle Button */}
               <div className="lg:hidden">
-                <DisclosureButton
-                  id="mobile-toggle"
-                  className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none  "
-                >
+                <DisclosureButton className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
-                    <XMarkIcon className="block h-6 w-6 " aria-hidden="true" />
+                    <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
                   ) : (
                     <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
                   )}
                 </DisclosureButton>
               </div>
 
-              {/* Logo  */}
+              {/* Logo */}
               <div className="flex items-center flex-shrink-0 p-4 order-last lg:order-first lg:pt-12 lg:w-1/6 lg:ml-auto">
                 <Image
                   src="/images/Bluewind Logo.png"
@@ -63,7 +60,7 @@ export default function Navbar() {
                 />
               </div>
 
-              {/* Desktop Navigation Links */}
+              {/* Desktop Nav */}
               <div className="flex items-stretch justify-start">
                 <div className="hidden lg:flex space-x-32 border-b-4 border-primary">
                   {navigation.map((item) => (
@@ -81,20 +78,20 @@ export default function Navbar() {
                 </div>
               </div>
             </div>
+
             <div className="hidden lg:flex justify-end">
               <ExternalLinks />
             </div>
           </div>
 
-          {/* Backdrop (only rendered when open) */}
+          {/* Backdrop using close() */}
           {open && (
             <div
-              className={`fixed inset-0 z-30 bg-black bg-opacity-25 lg:hidden ${
-                open ? "block" : "hidden"
-              }`}
-              onClick={() => document.getElementById("mobile-toggle")?.click()}
+              className="fixed inset-0 z-30 bg-black bg-opacity-25 lg:hidden"
+              onClick={() => close()}
             />
           )}
+
           <Transition
             show={open}
             as={Fragment}
@@ -106,17 +103,12 @@ export default function Navbar() {
             leaveTo="-translate-x-full"
           >
             <DisclosurePanel className="fixed inset-y-0 left-0 z-40 w-full max-w-xs flex flex-col overflow-y-auto bg-white pb-12 shadow-xl lg:hidden">
-              {/* Close Button */}
               <div className="flex px-4 pt-5 pb-2 border-b-2 border-neutral-lightGray">
-                <DisclosureButton
-                  id="mobile-close"
-                  className="-m-2 inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none"
-                >
+                <DisclosureButton className="-m-2 inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none">
                   <span className="sr-only">Close menu</span>
                   <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                 </DisclosureButton>
               </div>
-              {/* Mobile Navigation Links */}
               <div className="space-y-1 px-2 pt-2 pb-3">
                 {navigation.map((item) => (
                   <DisclosureButton

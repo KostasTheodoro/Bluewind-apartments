@@ -48,10 +48,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="text-center text-sm text-neutral-white ">
-          <p>
-            © {new Date().getFullYear()} Bluewind Apartments. All rights
-            reserved.
-          </p>
+          <p>© 2025 Bluewind Apartments. All rights reserved.</p>
         </div>
       </div>
     </footer>
