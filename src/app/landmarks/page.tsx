@@ -45,61 +45,53 @@ const destinations = [
 
 export default function Landmarks() {
   return (
-    <section className=" bg-neutral-white">
+    <section className="bg-neutral-white pb-24">
       <div>
         <h1 className="text-5xl font-bold text-primary text-center tracking-wide py-24 px-8">
           Crete&apos;s Hidden Gems
         </h1>
 
         {/* Top Image */}
-        <div className="w-full mb-12 mx-auto max-w-5xl ">
-          <div className="relative max-w-full">
-            <Image
-              src="/images/Crete Historical Map.png"
-              alt="Map of Crete"
-              layout="intrinsic"
-              width={1000}
-              height={500}
-              className="rounded-xl object-contain"
-              priority
-            />
-          </div>
+        <div className="w-full mb-12 mx-auto max-w-5xl px-4">
+          <Image
+            src="/images/Crete Historical Map.png"
+            alt="Map of Crete"
+            width={1000}
+            height={500}
+            className="rounded-xl object-contain w-full h-auto"
+            priority
+          />
         </div>
 
-        {/* Grid Layout */}
-        <div className=" lg:p-8 mx-auto grid grid-cols-1  lg:grid-cols-2 gap-36">
+        {/* Responsive Grid */}
+        <div className="mx-auto max-w-[1600px] px-4 grid grid-cols-1 lg:grid-cols-2 gap-x-[10vw] gap-y-32">
           {destinations.map((destination) => (
             <div
               key={destination.name}
-              className="flex flex-col sm:flex-row gap-2 items-center"
+              className="flex flex-col text-center items-center"
             >
-              <div className="relative w-full h-96 lg:w-1/2">
+              {/* Title */}
+              <h2 className="text-3xl font-bold text-primary mb-6">
+                {destination.name}
+              </h2>
+
+              {/* Image */}
+              <div className="relative w-full h-72 sm:h-96 mb-6 rounded-xl overflow-hidden shadow-lg">
                 <Image
                   src={destination.image}
                   alt={destination.name}
-                  layout="fill"
-                  objectFit="cover"
-                  className="rounded-xl shadow-lg"
+                  fill
+                  className="object-cover"
                 />
               </div>
 
-              <div className="w-1/2">
-                <h2 className="text-4xl font-semibold text-primary mb-12">
-                  {destination.name}
-                </h2>
-                <div className="mt-2 text-neutral-slate text-lg">
-                  {destination.description
-                    .split("\n\n")
-                    .map((paragraph, index) => (
-                      <div key={index}>
-                        <p>{paragraph}</p>{" "}
-                        {index <
-                          destination.description.split("\n\n").length - 1 && (
-                          <br />
-                        )}{" "}
-                      </div>
-                    ))}
-                </div>
+              {/* Text */}
+              <div className="text-neutral-slate text-base space-y-4 px-2 sm:px-4">
+                {destination.description
+                  .split("\n\n")
+                  .map((paragraph, index) => (
+                    <p key={index}>{paragraph}</p>
+                  ))}
               </div>
             </div>
           ))}
