@@ -1,6 +1,8 @@
+import Link from "next/link";
+
 export default function HeroSection() {
   return (
-    <div className="relative bg-primary ">
+    <div className="relative bg-primary">
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
@@ -20,15 +22,15 @@ export default function HeroSection() {
             for your vacation.
           </p>
           <div className="mt-16 flex justify-center gap-4">
-            <a
+            <Link
               href="/about"
-              className="inline-block rounded-xl hover:border-2 hover:border-primary bg-neutral-lightGray bg-opacity-40 px-8 py-3 text-xl font-bold text-primary
+              className="inline-block rounded-xl border-2 border-transparent hover:ring-2 hover:ring-primary bg-neutral-lightGray bg-opacity-40 px-8 py-3 text-xl font-bold text-primary
               hover:bg-primary-coral
-              focus:ring-2 focus:ring-primary  focus:outline-none 
+              focus:ring-2 focus:ring-primary focus:outline-none 
               transition-all duration-300 ease-in-out transform hover:scale-95"
             >
               LEARN MORE
-            </a>
+            </Link>
           </div>
         </div>
       </div>
